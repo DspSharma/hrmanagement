@@ -1,0 +1,143 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/Layout/_LayoutAdmin.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+
+@{
+    var project = ViewData["projectData"] as List<ProjectOutput>;
+    bool isActive = (bool)ViewData["isActive"];
+    var checkType = Context.Request.Query["isActive"].ToString();
+
+    if (checkType != "")
+    {
+        if (checkType == "all")
+        {
+            project = project?.ToList();
+        }
+        else if (isActive == true)
+        {
+            project = project?.Where(user => user.IsActive == true).ToList();
+        }
+        else if (isActive == false)
+        {
+            project = project?.Where(user => user.IsActive == false).ToList();
+        }
+    }
+}
+
+<section class="content-header">
+    <div>
+        <h4>
+            List of project
+            <select id="isActiveSelect" name="isActive" style="margin-left:5%;" onchange="selectProjectActiveInActive()">
+                <option value="all" @(Context.Request.Query["isActive"] == "all" ? "selected" : "")>All</option>
+                <option value="true" @(Context.Request.Query["isActive"] == "true" ? "selected" : "")>Active</option>
+                <option value="false" @(Context.Request.Query["isActive"] == "false" ? "selected" : "")>Inactive</option>
+            </select>
+            <a class="btn btn-primary" href="~/Admin/Project/AddUpdateProjectForm" style="float:right;"> Add project</a>
+        </h4>
+    </div>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+
+                <div class="box-body">
+                    <div class="table-responsive">
+                        <table id="About" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Title</th>
+                                    @*<th>Description</th>*@
+                                    <th>Url</th>
+                                    <th>Status</th>
+                                    <th>IsActive</th>
+                                    <th>CreatedAt</th>
+                                    <th>UpdatedAt </th>
+                                    <th>Action </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (project != null)
+                                {
+                                    @foreach (var data in project)
+                                    {
+                                        <tr>
+                                            <td>@data.Id</td>
+                                            <td>@data.Title</td>
+                                           
+                                            <td>@data.Url</td>
+                                            <td>@data.Status</td>
+                                            <td>
+                                                <select onchange="updateHolidayStatus(@data.Id)">
+                                                    @if (data.IsActive == true)
+                                                    {
+                                                        <option value="Active" selected>Active</option>
+                                                        <option value="inActive">InActive</option>
+                                                    }
+                                                    else
+                                                    {
+                                                        <option value="Active">Active</option>
+                                                        <option value="inActive" selected>InActive</option>
+                                                    }
+                                                </select>
+                                            </td>
+                                            <td>@data.CreatedAt</td>
+                                            <td>@data.UpdatedAt</td>
+                                            <td>
+                                                <a class="btn btn-primary" href="~/Admin/Project/AddUpdateProjectForm/@data.Id">Edit/View</a>
+                                                <a class="btn btn-danger" href="~/Admin/Project/deleteByIdProject/@data.Id"><i class="fa fa-trash"> </i> Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+    function selectProjectActiveInActive(){
+        var selectElement = document.getElementById("isActiveSelect");
+        var selectedValue = selectElement.value;
+
+        updateData(selectedValue);
+        updateURLParams(selectedValue);
+    }
+    function updateData(selectedValue) {
+
+        $.ajax({
+           // url: '/Admin/User/userList',
+            url: '/Admin/Project/ProjectList',
+            data: { isActive: selectedValue },
+            success: function (response) {
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
+    }
+
+    function updateURLParams(selectedValue) {
+        var newUrl = window.location.href.split('?')[0] + '?isActive=' + selectedValue;
+        history.pushState({}, '', newUrl);
+    }
+
+
+    function updateHolidayStatus(Id) {
+        window.location.href = "/../../Admin/Project/ActiveInActive/" + Id
+    }
+</script>
+@await Component.InvokeAsync("Toaster")

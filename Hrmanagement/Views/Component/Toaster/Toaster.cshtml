@@ -1,0 +1,15 @@
+﻿@if (TempData["success"] != null)
+{
+    <script>
+        var message = '@TempData["success"]';
+        toastr.success(message);
+    </script>
+}
+
+@if (TempData["error"] != null)
+{
+    <script>
+        var message = '@TempData["error"]';
+        toastr.error(message);
+    </script>
+}

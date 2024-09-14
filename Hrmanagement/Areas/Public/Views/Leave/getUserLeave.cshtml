@@ -1,0 +1,292 @@
+﻿@{
+    Layout = "~/Areas/Public/Views/Shared/Layout/_LayoutPublic.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+
+@{
+    var leaveUserData = ViewData["userLeaveData"] as List<LeaveOutput>;
+    //if(leaveUserData !=null)
+    //{
+    //    leaveUserData = leaveUserData.OrderByDescending(x => x.CreatedAt).ToList();
+    //}
+    // var currentYear = leaveUserData.SelectedYear;
+    var currentYear = DateTime.Now.Year;
+    var currentMont = DateTime.Now.Month;
+    var previousYears = Enumerable.Range(currentYear - 5, 6);
+    var months = new Dictionary<int, string>();
+    months.Add(01, "January");
+    months.Add(02, "February");
+    months.Add(03, "March");
+    months.Add(04, "April");
+    months.Add(05, "May");
+    months.Add(06, "June");
+    months.Add(07, "July");
+    months.Add(08, "August");
+    months.Add(09, "September");
+    months.Add(10, "October");
+    months.Add(11, "November");
+    months.Add(12, "December");
+}
+
+
+
+<section class="content">
+
+    @*<form style="padding-top:20px;" method="get" action="~/Public/Leave/getUserLeave">
+    Year:-
+    <select name="year" style="width:8%">
+    @foreach (var year in previousYears.Reverse())
+    {
+    <option value="@year" selected="@(currentYear == year ? "selected" : null)">@year</option>
+    }
+    </select>
+    Month :-
+    <select name="month" style="width:8%">
+    @foreach (var month in months)
+    {
+    <option value="@month.Key" selected="@(currentMont == month.Key ? "selected" : null)">@month.Value</option>
+    }
+    </select>
+    <button type="submit" class="btn btn-info">Ok</button>
+    </form>*@
+
+
+
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Leave List</h3>
+                    <button class="btn btn-info pull-right" onclick="showModel('formSettingKey')"><i class="fa fa-plus"></i> Leave-Request</button>
+                </div>
+                <div class="box-body">
+                    <div class="table-responsive">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>From Date</th>
+                                    <th>To Date</th>
+                                    <th>Total Days</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (leaveUserData != null)
+                                {
+                                    var i = 0;
+
+                                    @foreach (var leaveList in leaveUserData)
+                                    {
+                                        <tr>
+
+                                            <td>@(++i)</td>
+                                            <td>@Convert.ToDateTime(leaveList.LeaveFromDate).ToString("dd/MM/yyyy")</td>
+                                            <td>@Convert.ToDateTime(leaveList.LeaveToDate).ToString("dd/MM/yyyy")</td>
+                                            <td>@leaveList.TotalLeaveDays</td>
+                                            <td>
+                                                @if (leaveList.IsLeaveApproved == true)
+                                                {
+
+                                                    <h4 style="background-color:green;width:25%;height:26px;color:white;">Approved</h4>
+                                                }
+                                                else if (leaveList.IsRejected == true)
+                                                {
+
+                                                    <h4 style="background-color:red;width:25%;height:26px;color:white;">Rejected</h4>
+                                                }
+                                                else
+                                                {
+
+                                                    <h4 style="background-color:yellow;width:25%;height:26px;color:blue;">Pending</h4>
+                                                }
+
+                                            </td>
+                                            <td>
+                                                <a class="dropdown-item" href="~/Public/Leave/leaveById/@leaveList.Id">View</a><br>
+
+                                            </td>
+
+
+                                        </tr>
+                                    }
+
+                                }
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for System Setting Work Start-->
+        <div class="modal fade" id="formSettingKeyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Add-Update Leave-Request</h5>
+                        <button type="button" id="closeButton" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Subject:</label>
+                                <input type="text" class="form-control" id="title" name="Title" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message" name="Message" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">FromDate:</label>
+                                <input type="date" class="form-control" id="fromDate" name="LeaveFromDate" placeholder="FromDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">ToDate:</label>
+                                <input type="date" class="form-control" id="toDate" name="LeaveToDate" placeholder="ToDate">
+                            </div>
+                        </form>
+
+                        @*Loding Work Start*@
+                        <div id="loading-spinner" class="spinner-border text-primary" role="status" style="display: none; margin-left:45%;margin-top:30px;">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        @*Loding Work End*@
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="cancelButton" class="btn btn-danger" data-dismiss="modal" onclick="cancelAndReloadPage()">Cancel</button>
+                        <button type="button" id="addUpdateButto" class="btn btn-primary" onclick="createNewKeyValue('formSettingKey', event)">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for System Setting Work End-->
+
+    </div>
+</section>
+
+<script>
+    // SystemSetting Work Start
+    var isLoading = false;
+    function cancelAndReloadPage() {
+        location.reload();
+    }
+    $(document).ready(function () {
+        $(".form-control").css({ "display": "inline-block", "width": "90%" });
+        $(".control-label").css({ "display": "block" });
+    });
+    function showModel(modalId) {
+        $(`#${modalId}`).val('');
+        $(`#${modalId}Modal`).modal('show');
+    }
+    function createNewKeyValue(KeyElId, event) {
+        var titleInput = document.getElementById('title');
+        var titleName = titleInput ? titleInput.value.trim() : '';
+        var messageInput = document.getElementById('message');
+        var mesageName = messageInput ? messageInput.value.trim() : '';
+        var fromDateInput = document.getElementById('fromDate');
+        var fromDateName = fromDateInput ? fromDateInput.value.trim() : '';
+        var toDateInput = document.getElementById('toDate');
+        var toDateName = toDateInput ? toDateInput.value.trim() : '';
+
+        //var Addressegex = /^[a-zA-Z][a-zA-Z0-9\s.,#-]*$/;
+        if (titleName === '') {
+            toastr.error("Subject is required");
+            return;
+        }
+        else if (titleName.length < 2 || titleName.length > 50) {
+            toastr.error("Subject should be between minlength 2 and maxlength 50");
+            return;
+        }
+        //else if (!titleName.match(Addressegex)) {
+        //    toastr.error("Subject must start with alphabetic characters");
+        //    return;
+        //}
+        else if (mesageName === '') {
+            toastr.error("Message is required");
+            return;
+        }
+        else if (mesageName.length < 2 || mesageName.length > 500) {
+            toastr.error("Message should be between minlength 2 and maxlength 500");
+            return;
+        }
+        //else if (!mesageName.match(Addressegex)) {
+        //    toastr.error("Message must start with alphabetic characters");
+        //    return;
+        //}
+        else if (fromDateName === '') {
+            toastr.error("from Date is required");
+            return;
+        }
+        else if (toDateName === '') {
+            toastr.error("To Date is required");
+            return;
+        }
+        else if (toDateName < fromDateName) {
+            toastr.error("From Date should be less than  To Date");
+            return false;
+        }
+
+        var dataToSend = {
+            "Title": titleName,
+            "Message": mesageName,
+            "LeaveFromDate": fromDateName,
+            "LeaveToDate": toDateName
+        };
+        isLoading = true;
+        $('#cancelButton').prop('disabled', true);
+        $('#addUpdateButto').prop('disabled', true);
+        $('#closeButton').prop('disabled',true);
+        $('#loading-spinner').show();
+        console.log(dataToSend);
+        // $('#loadingIndicator').show();
+        $.ajax({
+            type: 'POST',
+            dataType: "json",
+            data: JSON.stringify(dataToSend),
+            url: "/../../Public/Leave/AddUpdateLeaveRequest",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            success: function (response) {
+
+                isLoading = false;
+                $('#cancelButton').prop('disabled', false);
+                $('#addUpdateButto').prop('disabled', false);
+                $('#closeButton').prop('disabled', false);
+                $('#loading-spinner').hide();
+
+                console.log(response);
+                var data = response.data;
+                //var message = data.succeed;
+                // console.log(response);
+                if (response && response.data) {
+                    var res = response.data;
+                    var message = res.message;
+                    toastr.success('Data Add Save Successfully');
+                    location.reload();
+                    //toastr.success(`${message}`);
+                } else {
+                    isLoading = false;
+                    $('#loading-spinner').hide();
+                    toastr.error('Leave for the same date range already exists');
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000);
+                    //toastr.error(`${message}`);
+                }
+               
+            },
+            
+        });
+       
+    }
+</script>
+
+
+
+@await Component.InvokeAsync("Toaster")

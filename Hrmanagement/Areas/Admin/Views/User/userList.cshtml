@@ -1,0 +1,186 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/Layout/_LayoutAdmin.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+
+
+@{
+    var userData = ViewData["userData"] as List<UserOutput>;
+    //var isActive = ViewData["isActive"];
+    bool isActive = (bool)ViewData["isActive"];
+    var checkType = Context.Request.Query["isActive"].ToString();
+
+    if(checkType !="")
+    {
+        if(checkType == "all")
+        {
+            userData = userData?.ToList();
+        }
+        else if(isActive == true)
+        {
+            userData = userData?.Where(user => user.IsActive == true).ToList();
+        }
+        else if(isActive == false)
+        {
+            userData = userData?.Where(user => user.IsActive == false).ToList();
+        }
+    }
+
+}
+
+@if (userData != null)
+{
+    <section class="content-header">
+        <div>
+            
+
+            <h3>
+                List of User
+                <select id="isActiveSelect" name="isActive" style="margin-left:5%;" onchange="handleSelectChange()">
+                    <option value="all" @(Context.Request.Query["isActive"] == "all" ? "selected" : "")>All</option>
+                    <option value="true" @(Context.Request.Query["isActive"] == "true" ? "selected" : "")>Active</option>
+                    <option value="false" @(Context.Request.Query["isActive"] == "false" ? "selected" : "")>Inactive</option>
+                </select>
+                
+                <a class="btn btn-primary" href="~/Admin/User/AddUpdateUserForm" style="float:right;"> Add User</a>
+            </h3>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table id="About" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>FirstName</th>
+                                        <th>LastName</th>
+                                        <th>Email</th>
+                                        <th>Mobile</th>
+                                        <th>Role</th>
+                                        <th>Profile Pic</th>
+                                        <th>IsActive</th>
+                                        <th>CreatedAt</th>
+                                        <th>UpdatedAt </th>
+                                        <th>Action </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var data in userData)
+                                    {
+                                        <tr>
+                                            <td>@data.Id</td>
+                                            <td>@data.FirstName</td>
+                                            <td>@data.LastName</td>
+                                            <td>@data.Email</td>
+                                            <td>@data.Mobile</td>
+                                            <td>@data.Role</td>
+                                            <td> <img src="@data.LocalOrgImage" style="height: 50px;width: 70px;"></td>
+                                            <td>
+                                                @if(data.IsActive == true)
+                                                {
+                                                    <p>Active</p>
+                                                }
+                                                else
+                                                {
+                                                    <p>InActive</p>
+                                                }
+                                            </td>
+                                            @*<td>
+                                                <select onchange="updateUserStatus(@data.Id)">
+                                                    @if (data.IsActive == true)
+                                                    {
+                                                        <option value="Active" selected>Active</option>
+                                                        <option value="inActive">InActive</option>
+                                                    }
+                                                    else
+                                                    {
+                                                        <option value="Active">Active</option>
+                                                        <option value="inActive" selected>InActive</option>
+                                                    }
+                                                </select>
+                                            </td>*@
+                                            <td>@data.CreatedAt</td>
+                                            <td>@data.UpdatedAt</td>
+                                            <td>
+                                              
+                                               @* <a class="btn btn-danger" href="~/Admin/User/deleteByIdUser/@data.Id"><i class="fa fa-trash"> </i> Delete</a>*@
+                                                @if (data.Role == "Public")
+                                                {
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            View
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="~/Admin/User/AddUpdateUserForm/@data.Id">Edit</a>
+                                                            <a class="dropdown-item" href="~/Admin/Leave/LeaveUserById/@data.Id">User Leave</a>
+                                                            <a class="dropdown-item" href="~/Admin/Attendance/AttendanceUserById/@data.Id">User Attendance</a>
+                                                            <a class="dropdown-item" href="~/Admin/Attendance/TimeSheetList/@data.Id">User Time-Sheet</a>
+                                                            <a class="dropdown-item" href="~/Admin/Attendance/partialLeave/@data.Id">Partial-Leave</a>      
+                                                        </div>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <a class="btn btn-primary" href="~/Admin/User/AddUpdateUserForm/@data.Id">Edit/View</a>
+                                                }
+
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+}
+
+<script>
+    function handleSelectChange() {
+        var selectElement = document.getElementById("isActiveSelect");
+        var selectedValue = selectElement.value;
+
+        updateData(selectedValue);
+        updateURLParams(selectedValue);
+    }
+    function updateData(selectedValue) {
+        
+         $.ajax({
+            url: '/Admin/User/userList',
+             data: { isActive: selectedValue },
+             success: function(response) {
+                location.reload();
+             },
+             error: function(xhr, status, error) {
+                 console.error(error);
+             }
+         });
+    }
+
+    function updateURLParams(selectedValue) {
+        var newUrl = window.location.href.split('?')[0] + '?isActive=' + selectedValue;
+        history.pushState({}, '', newUrl);
+    }
+</script>
+
+
+
+<script>
+
+    function updateUserStatus(Id) {
+        window.location.href = "/../../Admin/User/ActiveInActive/" + Id
+    }
+</script>
+@await Component.InvokeAsync("Toaster")

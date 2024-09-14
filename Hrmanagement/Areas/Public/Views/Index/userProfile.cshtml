@@ -1,0 +1,86 @@
+﻿@{
+    Layout = "~/Areas/Public/Views/Shared/Layout/_LayoutPublic.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+@{
+    var userId = ViewData["userData"] as UserOutput;
+    int id = userId != null ? userId.Id : 0;
+}
+<section class="content container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">User-Profile Update</h3>
+        </div>
+        <form class="card-body" method="post" action="~/Public/Index/AddUpdateUserProfile" onsubmit="return addupdateUserProfile()" enctype="multipart/form-data">
+            <input type="hidden" name="Id" value="@userId?.Id" />
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="firstName" class="col-form-label col-sm-2">First Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="firstName1" name="FirstName" placeholder="FirstName" value="@userId?.FirstName">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="lastName" class="col-form-label col-sm-2">LastName</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="lastName1" name="LastName" placeholder="LastName" value="@userId?.LastName">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="email" class="col-form-label col-sm-2">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email1" name="Email" placeholder="Email" value="@userId?.Email">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="email" class="col-form-label col-sm-2">Mobile</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="mobile1" name="Mobile" placeholder="Mobile" value="@userId?.Mobile">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="email" class="col-form-label col-sm-2">Profile</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control" id="ImageFile" name="ImageFile" placeholder="ImageFile" value="@userId?.ProfileImage">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    @if(userId?.Password == null)
+                    {
+                        <label for="email" class="col-form-label col-sm-2">Password</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="password" name="Password" placeholder="password" value="@userId?.Password">
+                        </div>
+                    }
+                    else
+                    {
+                        <input type="hidden" class="form-control" id="password" name="Password" placeholder="password" value="123456">
+                    }
+
+                    @if (userId?.Role == null)
+                    {
+                        <label for="email" class="col-form-label col-sm-2">Role</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="role" name="Role" placeholder="Role" value="@userId?.Role">
+                        </div>
+                    }
+                    else
+                    {
+                        <input type="hidden" class="form-control" id="Role" name="Role" placeholder="Role" value="Public">
+                    }
+
+                </div>
+            </div>
+
+           
+            <div class="card-footer">
+                <button type="submit" class="btn btn-info float-left">Save</button>
+            </div>
+        </form>
+    </div>
+</section>
+@await Component.InvokeAsync("Toaster")

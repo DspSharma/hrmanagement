@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html2>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title id="nametitle"></title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/admin/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/admin/bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/admin/dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/admin/js/toastr.js"></script>
+    <script src="/admin/js/validation.js"></script>
+    <link rel="stylesheet" href="/admin/css/site.css">
+    <script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script>
+</head>
+<body class="hold-transition skin-blue sidebar-mini" style="margin-top:40px;">
+    <div class="wrapper">
+        <header class="main-header adminheader">
+            @inject IHttpContextAccessor contextAccessors;
+            @{
+                string imagePath = @contextAccessors.HttpContext.Session.GetString("role");
+            }
+            <a href="~/images/Image/1a2c501e-e07c-43f6-b21f-078a8d175cbb_logoimage.jpg" id="logoschool" class="logo">
+                <span class="logo-mini" id="namemin"></span>
+                <span class="logo-lg"><b id="schoolName"></b></span>
+            </a>
+            <nav class="navbar navbar-fixed-top" role="navigation">
+                <a href="#" style="position: absolute;" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="" id="ProfileImage" alt="AVATAR" style="width:40px;">
+                    </div>
+                    <div class="pull-left info">
+                        <a href="~/Public/Index/userProfile">
+                            <span class=" mini-font text-capital m-0 h2" id="firstName"></span>
+                        </a>
+                    </div>
+                </div>
+                @Html.Partial("~/Areas/Public/Views/Shared/partial/PublicMenu.cshtml")
+            </section>
+        </aside>
+        <div class="content-wrapper">
+            <script>
+                AmagiLoader.show();
+            </script>
+            @RenderBody()
+            <script>
+                AmagiLoader.hide();
+            </script>
+        </div>
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2023@* <a href="https://codinginfinite.com">CodingInfinite</a>.*@</strong> All rights reserved.
+            <span><b id="namedowmbar"></b></span>
+        </footer>
+    </div>
+    <script src="/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/admin/dist/js/adminlte.min.js"></script>
+    <script src="/admin/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                method: "GET",
+                url: "/../../Public/Index/userLayout",
+            })
+                .done(function (response) {
+                    console.log(response);
+                    if (response && response.data) {
+                        var res = response.data;
+                        $('#firstName').html(res.firstName);
+                        console.log(res.firstName);
+                        $('#ProfileImage').attr('src', res.localOrgImage);
+                    } else {
+                        console.error("Invalid response format or missing data");
+                    }
+                })
+                .fail(function (jqXHR, textStatus, errorThrown) {
+                    console.error("AJAX request failed:", textStatus, errorThrown);
+                });
+        });
+    </script>
+</body>
+</html>

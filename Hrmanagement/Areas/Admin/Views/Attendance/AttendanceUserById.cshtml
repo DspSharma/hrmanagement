@@ -1,0 +1,356 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/Layout/_LayoutAdmin.cshtml";
+}
+@using Hrmanagement.Core.Models;
+@using System.Globalization;
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        /*width:20%;*/
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+@{
+    var attendance = ViewData["AttendanceData"] as AttendanceModels;
+    var getAttendance = attendance?.Attendance;
+    if (getAttendance !=null)
+    {
+        getAttendance = getAttendance.Where(x => x?.CheckIn != null).OrderBy(x => x.CheckIn).ToList();
+    }
+    var getTotalHours = attendance?.TotalMonthHours;
+    var currentmonthHours = attendance.currentMonthHours;
+    var extraHours = attendance.extraHours;
+    var shortHours = attendance.shortHours;
+    var partialLeaveHours = attendance.MonthlyPartialLeaveHours;
+    var currentYear = attendance.SelectedYear;
+    var previousYears = Enumerable.Range(currentYear - 5, 6);
+    var currentMonths = attendance.SelectedMonth;
+    var months = new Dictionary<int, string>();
+    months.Add(01, "January");
+    months.Add(02, "February");
+    months.Add(03, "March");
+    months.Add(04, "April");
+    months.Add(05, "May");
+    months.Add(06, "June");
+    months.Add(07, "July");
+    months.Add(08, "August");
+    months.Add(09, "September");
+    months.Add(10, "October");
+    months.Add(11, "November");
+    months.Add(12, "December");
+
+    var userId = ViewData["userId"];
+}
+
+
+
+<form style="padding-top:20px;" method="get" action="~/Admin/Attendance/AttendanceUserById">
+    <input type="hidden" name="id" value="@userId" />
+    Year:-
+    <select name="year" style="width:8%">
+        @foreach (var year in previousYears.Reverse())
+        {
+            <option value="@year" selected="@(currentYear == year ? "selected" : null)">@year</option>
+        }
+    </select>
+    Month :-
+    <select name="month" style="width:8%">
+        @foreach (var month in months)
+        {
+            <option value="@month.Key" selected="@(currentMonths == month.Key ? "selected" : null)">@month.Value</option>
+        }
+    </select>
+    <button type="submit" class="btn btn-info">Ok</button>
+</form>
+
+<!-- Modal for System Setting Work Start-->
+<div class="modal fade" id="formSettingKeyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Add-Update CheckIn CheckOut</h5>
+                <button type="button" id="closeButton" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="hidden" id="userId" name="UserId" value="@userId" />
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">CheckIn:</label>
+                        <input type="datetime-local" class="form-control" id="checkIn" name="CheckIn" placeholder="CheckIn">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">CheckOut:</label>
+                        <input type="datetime-local" class="form-control" id="checkOut" name="CheckOut" placeholder="CheckOut">
+                    </div>
+                </form>
+
+                @*Loding Work Start*@
+                <div id="loading-spinner" class="spinner-border text-primary" role="status" style="display: none; margin-left:45%;margin-top:30px;">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                @*Loding Work End*@
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="cancelButton" class="btn btn-danger" data-dismiss="modal" onclick="cancelAndReloadPage()">Cancel</button>
+                <button type="button" id="addUpdateButto" class="btn btn-primary" onclick="createNewKeyValue('formSettingKey', event)">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for System Setting Work End-->
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Attendance List</h3>
+                    <button class="btn btn-info pull-right" onclick="showModel('formSettingKey')"><i class="fa fa-plus"></i>CheckIn-CheckOut</button>
+                </div>
+                <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Check In</th>
+                                <th>Check Out</th>
+                                <th>Hours</th>
+                                @*<th>Map</th>*@
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                var n = 0;
+                            }
+                            @foreach (var attendanceList in getAttendance)
+                            {
+                                <tr>
+                                    <td>@(++n)</td>
+                                    <td>@attendanceList.CheckIn</td>
+                                    <td>
+                                        @if (attendanceList.IsCheckOut == false)
+                                        {
+                                            <b1>---</b1>
+                                        }
+                                        else
+                                        {
+                                            @attendanceList.CheckOut
+                                        }
+                                    </td>
+                                    <td>@attendanceList?.TotalAttendancesHours?.ToString("hh\\:mm").PadLeft(4, '0')</td>
+                                   @* <td>@attendanceList.TotalAttendancesHours</td>*@
+                                    @*<td>@attendanceList.TotalAttendancesHours.ToString("HH:mm")</td>*@
+                                   @* <td>
+                                        <button class="btn btn-info" onclick="googleMapShow('googleMapKey',@attendanceList.id)">Map</button>
+
+                                    </td>*@
+                                </tr>
+                            }
+                    </table>
+
+
+                    <!--Google Map Work Start-->
+                   @* <div class="modal fade" id="googleMapKeyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-fullscreen" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">User Location</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="map" style="width: 100%; height: 100vh;"></div>
+                                    <form>
+                                    </form>
+                                    <div id="loading-spinner" class="spinner-border text-primary" role="status" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        var map;
+                        var marker;
+                        var isLoading = false;
+                        function googleMapShow(modalId, id) {
+                            console.log(id);
+                            $(`#${modalId}Modal`).modal('show');
+                            loadGoogleMapsAPI(id);
+                        }
+                        function loadGoogleMapsAPI(id) {
+                            alert(id);
+                            $.ajax({
+                                type:'Get',
+                                dataType:"json",
+                                url: `/../../Admin/Attendance/attendanceById/${id}`,
+                                success: function (response) {
+                                    if (response) {
+                                        console.log(response);
+                                        var data = response.data;
+                                       
+                                        $('#googleMapKeyModal').modal('show');
+                                    } else {
+                                        console.error('Error fetching data.');
+                                    }
+                                },
+                            });
+                        }
+                    </script>*@
+
+                    <!--Google Map Work End-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <table style="border:1px solid black;margin-left:78%;margin-right:auto;width:22%;">
+        <tr>
+            <td style="width:150px;"><b> Month Hours</b> </td>
+            <td style="width:-1px;">@currentmonthHours</td>
+        </tr>
+        <tr>
+            <td style="width:150px;"><b>Working Hours</b>  </td>
+            <td style="width:-1px;">@getTotalHours</td>
+        </tr>
+        <tr>
+            @if (currentmonthHours >= shortHours)
+            {
+                <td style="width:150px;"><b>short hours</b>  </td>
+                <td style="width:-1px;">@shortHours</td>
+            }
+            else
+            {
+                <td style="width:150px;"><b>short hours</b>  </td>
+                <td style="width:-1px;">0</td>
+            }
+        </tr>
+        <tr>
+            @if (currentmonthHours <= extraHours)
+            {
+                <td style="width:150px;"><b>extra hours</b>  </td>
+                <td style="width:-1px;">@extraHours</td>
+            }
+            else
+            {
+                <td style="width:150px;"><b>extra hours</b>  </td>
+                <td style="width:-1px;">0</td>
+            }
+        </tr>
+        <tr>
+            @if (partialLeaveHours.Minutes != 0)
+            {
+                <td style="width:150px;"><b>PartialLeaveHours</b>  </td>
+                <td style="width:-1px;">@partialLeaveHours.ToString("hh\\:mm").PadLeft(4, '0')</td>
+            }
+
+        </tr>
+    </table>
+</section>
+
+<script>
+    var currentDate = new Date().toISOString().slice(0, 16);
+    document.getElementById("checkIn").setAttribute("max", currentDate);
+    document.getElementById("checkOut").setAttribute("max", currentDate);
+    // SystemSetting Work Start
+    var isLoading = false;
+    function cancelAndReloadPage() {
+        location.reload();
+    }
+    $(document).ready(function () {
+        $(".form-control").css({ "display": "inline-block", "width": "90%" });
+        $(".control-label").css({ "display": "block" });
+    });
+    function showModel(modalId) {
+        $(`#${modalId}`).val('');
+        $(`#${modalId}Modal`).modal('show');
+    }
+    function createNewKeyValue(KeyElId, event) {
+        var checkInInput = document.getElementById('checkIn');
+        var checkInName = checkInInput ? checkInInput.value.trim() : '';
+        var checkOutInput = document.getElementById('checkOut');
+        var checkOutName = checkOutInput ? checkOutInput.value.trim() : '';
+        var userIdInput = document.getElementById('userId');
+        var UserName = userIdInput ? userIdInput.value.trim() : '';
+
+        if (checkInName === '') {
+            toastr.error("Check In is required");
+            return;
+        }
+        else if (checkOutName === '') {
+            toastr.error("Check Out is required");
+            return;
+        }
+        
+        var dataToSend = {
+            "UserId": UserName,
+            "CheckIn": checkInName,
+            "CheckOut": checkOutName,
+           // "IsCheckOut": toDateName
+        };
+        isLoading = true;
+        $('#cancelButton').prop('disabled', true);
+        $('#addUpdateButto').prop('disabled', true);
+        $('#closeButton').prop('disabled', true);
+        $('#loading-spinner').show();
+        console.log(dataToSend);
+        // $('#loadingIndicator').show();
+        $.ajax({
+            type: 'POST',
+            dataType: "json",
+            data: JSON.stringify(dataToSend),
+            url: "/../../Admin/Attendance/AddUpdateAttendance",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            success: function (response) {
+
+                isLoading = false;
+                $('#cancelButton').prop('disabled', false);
+                $('#addUpdateButto').prop('disabled', false);
+                $('#closeButton').prop('disabled', false);
+                $('#loading-spinner').hide();
+
+                console.log(response);
+                var data = response.data;
+                //var message = data.succeed;
+                // console.log(response);
+                if (response && response.data) {
+                    var res = response.data;
+                    var message = res.message;
+                    toastr.success('Data Add Save Successfully');
+                    location.reload();
+                    //toastr.success(`${message}`);
+                } else {
+                    isLoading = false;
+                    $('#loading-spinner').hide();
+                    toastr.error('Leave for the same date range already exists');
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000);
+                    //toastr.error(`${message}`);
+                }
+
+            },
+
+        });
+
+    }
+</script>
+

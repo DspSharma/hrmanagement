@@ -1,0 +1,91 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/Layout/_LayoutAdmin.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+
+
+@{
+    var holidayData = ViewData["holidayData"] as List<HolidayOutput>;
+}
+
+@if (holidayData != null)
+{
+    <section class="content-header">
+        <div>
+            <h1>
+                List of Holiday
+                <a class="btn btn-primary" href="~/Admin/Holiday/AddUpdateHolidayForm" style="float:right;"> Add Holiday</a>
+            </h1>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table id="About" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>FromDate</th>
+                                        <th>ToDate</th>
+                                        <th>Title</th>
+                                        <th>IsActive</th>
+                                        <th>CreatedAt</th>
+                                        <th>UpdatedAt </th>
+                                        <th>Action </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var data in holidayData)
+                                    {
+                                        <tr>
+                                            <td>@data.Id</td>
+                                            <td>@data.HolidayFromDate</td>
+                                            <td>@data.HolidayToDate</td>
+                                            <td>@data.Title</td>
+                                            <td>
+                                                <select onchange="updateHolidayStatus(@data.Id)">
+                                                    @if (data.IsActive == true)
+                                                    {
+                                                        <option value="Active" selected>Active</option>
+                                                        <option value="inActive">InActive</option>
+                                                    }
+                                                    else
+                                                    {
+                                                        <option value="Active">Active</option>
+                                                        <option value="inActive" selected>InActive</option>
+                                                    }
+                                                </select>
+                                            </td>
+                                            <td>@data.CreatedAt</td>
+                                            <td>@data.UpdatedAt</td>
+                                            <td>
+                                                <a class="btn btn-primary" href="~/Admin/Holiday/AddUpdateHolidayForm/@data.Id">Edit/View</a>
+                                                @*<a class="btn btn-danger" href="~/Admin/Holiday/deleteByIdHoliday/@data.Id"><i class="fa fa-trash"> </i> Delete</a>*@
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+}
+
+<script>
+    function updateHolidayStatus(Id) {
+        window.location.href = "/../../Admin/Holiday/ActiveInActive/" + Id
+    }
+</script>
+@await Component.InvokeAsync("Toaster")

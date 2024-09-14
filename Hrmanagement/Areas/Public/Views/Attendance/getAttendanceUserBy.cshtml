@@ -1,0 +1,426 @@
+﻿@{
+    Layout = "~/Areas/Public/Views/Shared/Layout/_LayoutPublic.cshtml";
+}
+@using Hrmanagement.Core.Models;
+@using Hrmanagement.Core.DTO.DtoOutput;
+@using System.Globalization;
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+@{
+    var partialLeaveData = ViewData["partialLeaveData"] as List<PartialLeaveOutput>;
+    var firstData = partialLeaveData?.OrderByDescending(item => item.id).FirstOrDefault();
+
+
+    var attendance = ViewData["AttendanceData"] as AttendanceModels;
+    var getAttendance = attendance?.Attendance;
+    if (getAttendance != null)
+    {
+        getAttendance = getAttendance.Where(x => x?.CheckIn != null).OrderBy(x => x.CheckIn).ToList();
+    }
+    var getTotalHours = attendance.TotalMonthHours;
+    var currentmonthHours = attendance.currentMonthHours;
+    var extraHours = attendance.extraHours;
+    var shortHours = attendance.shortHours;
+    var partialLeaveHours = attendance.MonthlyPartialLeaveHours;
+    var currentYear = attendance.SelectedYear;
+    var previousYears = Enumerable.Range(currentYear - 5, 6);
+    var currentMonths = attendance.SelectedMonth;
+    var months = new Dictionary<int, string>();
+    months.Add(01, "January");
+    months.Add(02, "February");
+    months.Add(03, "March");
+    months.Add(04, "April");
+    months.Add(05, "May");
+    months.Add(06, "June");
+    months.Add(07, "July");
+    months.Add(08, "August");
+    months.Add(09, "September");
+    months.Add(10, "October");
+    months.Add(11, "November");
+    months.Add(12, "December");
+}
+
+<section class="content-header">
+    <div class="text-center">
+
+
+        @if (attendance.isTodayCheckedOut != true && attendance.isTodayCheckedIn != false)
+        {
+            @if (firstData != null && firstData?.ResumeTime == null)
+            {
+                <form id="resumeForm" action="" method="post">
+                    <input type="hidden" id="id" name="id" value="@firstData?.id">
+                    <input type="hidden" id="details" name="Detail" value="@firstData?.Detail">
+                    <button type="submit" class="btn btn-info" style="background-color:red;margin: auto;"><i class="fa fa-plus"></i> Resume</button>
+                </form>
+            }
+            else
+            {
+
+                <button class="btn btn-info" onclick="showModel('formSettingKey')" style="margin: auto;"><i class="fa fa-plus"></i> Pouse</button>
+            }
+        }
+    </div>
+
+    <div id="coordinatesResult"></div>
+
+    <form id="attendanceForm" action="~/Public/Attendance/addUpdateAttendance" method="post">
+        @if (attendance.isTodayCheckedIn == false)
+        {
+            <input type="hidden" id="latitudeInput" name="CheckInLatitude" />
+            <input type="hidden" id="longitudeInput" name="CheckInLongitude" />
+            <button id="submitCheckInButton" type="button" class="btn btn-primary">Check-In Today</button>
+        }
+        else
+        {
+            @if (attendance.isTodayCheckedOut == false)
+            {
+                <input type="hidden" id="latitudeInput" name="CheckOutLatitude" />
+                <input type="hidden" id="longitudeInput" name="CheckOutLongitude" />
+                <button id="submitCheckOutButton" type="button" class="btn btn-danger">Check-Out Today</button>
+            }
+            else
+            {
+                <button id="submitCheckOutButton" type="button" class="btn btn-secondary" disabled>Checked Out Today</button>
+            }
+        }
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var checkInButton = document.getElementById("submitCheckInButton");
+            var checkOutButton = document.getElementById("submitCheckOutButton");
+
+            if (checkInButton) {
+                checkInButton.addEventListener("click", function () {
+                    fetchCoordinates("CheckInLatitude", "CheckInLongitude");
+                });
+            }
+
+            if (checkOutButton) {
+                checkOutButton.addEventListener("click", function () {
+                    fetchCoordinates("CheckOutLatitude", "CheckOutLongitude");
+                });
+            }
+        });
+
+        function fetchCoordinates(latitudeFieldName, longitudeFieldName) {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    console.log(latitude, longitude);
+                    document.getElementById("latitudeInput").name = latitudeFieldName;
+                    document.getElementById("latitudeInput").value = latitude;
+                    document.getElementById("longitudeInput").name = longitudeFieldName;
+                    document.getElementById("longitudeInput").value = longitude;
+                    document.getElementById("attendanceForm").submit();
+                }, function (error) {
+                    console.error("Error getting geolocation:", error);
+                    handleGeolocationError(error);
+                });
+            } else {
+                console.error("Geolocation is not supported.");
+                handleGeolocationError("Geolocation is not supported.");
+            }
+        }
+        function handleGeolocationError(error) {
+            var errorMessage = typeof error === 'string' ? error : "An error occurred while retrieving geolocation.";
+            alert(errorMessage);
+        }
+    </script>
+
+
+
+
+    @*Lat Long Work End*@
+
+</section>
+
+<form style="padding-top:20px;" method="get" action="~/Public/Attendance/getAttendanceUserBy">
+    Year:-
+    <select name="year" style="width:15%">
+        @foreach (var year in previousYears.Reverse())
+        {
+            <option value="@year" selected="@(currentYear == year ? "selected" : null)">@year</option>
+        }
+    </select>
+    Month :-
+    <select name="month" style="width:15%">
+        @foreach (var month in months)
+        {
+            <option value="@month.Key" selected="@(currentMonths == month.Key ? "selected" : null)">@month.Value</option>
+        }
+    </select>
+    <button type="submit" class="btn btn-info">Ok</button>
+</form>
+
+<section class="content">
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">Attendance List</h3>
+        </div>
+        <div class="box-body">
+            <div class="table-responsive">
+                <table id="About" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Check In</th>
+                            <th>Check Out</th>
+                            <th>Day Name</th>
+                            <th>Hours</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var n = 0;
+                        }
+                        @foreach (var attendanceList in getAttendance)
+                        {
+                            <tr>
+                                <td>@(++n)</td>
+                                <td>@attendanceList.CheckIn</td>
+                                <td>
+                                    @if (attendanceList.IsCheckOut == false)
+                                    {
+                                        <b1>---</b1>
+                                    }
+                                    else
+                                    {
+                                        @attendanceList.CheckOut
+                                    }
+                                </td>
+                                <td>@attendanceList.DayName</td>
+
+                                <td>@attendanceList?.TotalAttendancesHours?.ToString("hh\\:mm").PadLeft(4, '0')</td>
+
+                                @*<td>@attendanceList.TotalAttendancesHours.ToString("hh")</td>*@
+                                @*<td>@attendanceList.TotalAttendancesHours</td>*@
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- Modal for System Setting Work Start-->
+        <div class="modal fade" id="formSettingKeyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Partial-Leave</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Detail:</label>
+                                <textarea class="form-control" id="detail" name="Detail" placeholder="Detail"></textarea>
+                            </div>
+                        </form>
+                        @*Loding Work Start*@
+                        <div id="loading-spinner" class="spinner-border text-primary" role="status" style="display: none; margin-left:45%;margin-top:30px;">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        @*Loding Work End*@
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="cancelButton" class="btn btn-danger" data-dismiss="modal" onclick="cancelAndReloadPage()">Cancel</button>
+                        <button type="button" id="addUpdateButto" class="btn btn-primary" onclick="createNewKeyValue('formSettingKey', event)">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for System Setting Work End-->
+
+    </div>
+
+    <table class="table-responsive attandanceTotalHourse" style="border:1px solid black;margin-left:78%;margin-right:auto;width:22%;">
+        <tr>
+            <td style="width:150px;"><b> Month Hours</b> </td>
+            <td style="width:-1px;">@currentmonthHours</td>
+        </tr>
+        <tr>
+            <td style="width:150px;"><b>Working Hours</b>  </td>
+            <td style="width:-1px;">@getTotalHours</td>
+        </tr>
+        <tr>
+            @if (currentmonthHours >= shortHours)
+            {
+                <td style="width:150px;"><b>short hours</b>  </td>
+                <td style="width:-1px;">@shortHours</td>
+            }
+            else
+            {
+                <td style="width:150px;"><b>short hours</b>  </td>
+                <td style="width:-1px;">0</td>
+            }
+        </tr>
+        <tr>
+            @if (currentmonthHours <= extraHours)
+            {
+                <td style="width:150px;"><b>extra hours</b>  </td>
+                <td style="width:-1px;">@extraHours</td>
+            }
+            else
+            {
+                <td style="width:150px;"><b>extra hours</b>  </td>
+                <td style="width:-1px;">0</td>
+            }
+        </tr>
+        <tr>
+            @if(partialLeaveHours.Minutes != 0)
+            {
+                <td style="width:150px;"><b>PartialLeaveHours</b>  </td>
+                <td style="width:-1px;">@partialLeaveHours.ToString("hh\\:mm").PadLeft(4, '0')</td>
+            }
+            
+        </tr>
+    </table>
+</section>
+
+
+<script>
+    var isLoading = false;
+    function cancelAndReloadPage() {
+        location.reload();
+    }
+    $(document).ready(function () {
+        $(".form-control").css({ "display": "inline-block", "width": "90%" });
+        $(".control-label").css({ "display": "block" });
+    });
+    function showModel(modalId) {
+        $(`#${modalId}`).val('');
+        $(`#${modalId}Modal`).modal('show');
+    }
+    function createNewKeyValue(KeyElId, event) {
+
+        var detailInput = document.getElementById('detail');
+        var detailName = detailInput ? detailInput.value.trim() : '';
+        // var valueKyId = document.getElementById('id').value || 0;
+
+        var Addressegex = /^[a-zA-Z][a-zA-Z0-9\s.,#-]*$/;
+       // var urlPattern = /^(https?:\/\/)?([\w.-]+\.[a-zA-Z]{2,})(\/[^\s]*)?$/;
+
+        if (detailName === '') {
+            toastr.error("Detail is required");
+            return;
+        }
+        else if (!detailName.match(Addressegex)) {
+            toastr.error('Please enter a valid Detail.');
+            return;
+        }
+
+        // var valueKyUserId = document.getElementById('userId').value || 0;
+        var dataToSend = {
+            //"id": valueKyId,
+            //"UserId":valueKyUserId,
+            "Detail": detailName,
+        };
+        isLoading = true;
+        $('#cancelButton').prop('disabled', true);
+        $('#addUpdateButto').prop('disabled', true);
+        $('#closeButton').prop('disabled', true);
+        $('#loading-spinner').show();
+
+        console.log(dataToSend);
+        // $('#loadingIndicator').show();
+        $.ajax({
+
+            type: 'POST',
+            dataType: "json",
+            data: JSON.stringify(dataToSend),
+            url: "/../../Public/Attendance/AddUpdatePartialLeave",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            success: function (response) {
+                isLoading = false;
+                $('#cancelButton').prop('disabled', false);
+                $('#addUpdateButto').prop('disabled', false);
+                $('#closeButton').prop('disabled', false);
+                $('#loading-spinner').hide();
+
+                var data = response.data;
+                toastr.success('Data Add Save Successfully');
+                setTimeout(function () {
+                    location.reload();
+                }, 2000);
+            },
+            error: function (xhr, status, error) {
+                toastr.success('Data Add Save Successfully');
+                setTimeout(function () {
+                    location.reload();
+                }, 2000);
+            }
+        });
+        $(`#${modalId}`).modal('hide');
+        document.getElementById(KeyElId).value = '';
+        valueInput.value = '';
+        $(".form-control").css({ "display": "inline-block", "width": "90%" });
+        $(".control-label").css({ "display": "block" });
+    }
+
+
+
+    //<td>userMemoList.AvailableForPublic</td>
+</script>
+
+<script>
+    $('#resumeForm').submit(function (event) {
+        event.preventDefault();
+        var formData = {
+            id: $('#id').val(),
+            Detail: $('#details').val()
+        };
+        $.ajax({
+            type: 'POST',
+            dataType: 'json',
+            data: JSON.stringify(formData),
+            url: '/../../Public/Attendance/AddUpdatePartialLeave',
+            contentType: 'application/json',
+            success: function (response) {
+                isLoading = false;
+                $('#cancelButton, #addUpdateButto, #closeButton').prop('disabled', false);
+                $('#loading-spinner').hide();
+                toastr.success('Data Add Save Successfully');
+                setTimeout(function () {
+                    location.reload();
+                }, 2000);
+            },
+            error: function (xhr, status, error) {
+                // Step 6: Handle AJAX error
+                toastr.error('Failed to save data');
+                setTimeout(function () {
+                    location.reload();
+                }, 2000);
+            }
+        });
+    });
+</script>
+
+
+@await Component.InvokeAsync("Toaster")
+
+

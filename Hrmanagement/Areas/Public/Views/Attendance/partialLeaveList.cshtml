@@ -1,0 +1,146 @@
+﻿@{
+    Layout = "~/Areas/Public/Views/Shared/Layout/_LayoutPublic.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+@{
+    var PartialLeave = ViewData["partialLeaveData"] as List<PartialLeaveOutput>;
+    var months = new Dictionary<int, string>
+{
+    { 1, "January" },
+    { 2, "February" },
+    { 3, "March" },
+    { 4, "April" },
+    { 5, "May" },
+    { 6, "June" },
+    { 7, "July" },
+    { 8, "August" },
+    { 9, "September" },
+    { 10, "October" },
+    { 11, "November" },
+    { 12, "December" }
+};
+    DateTime currentDate = DateTime.Now;
+    int currentYear = currentDate.Year;
+    int currentMonth = currentDate.Month;
+    int selectedYear = currentYear;
+    int selectedMonth = currentMonth;
+    var previousYears = Enumerable.Range(currentYear - 5, 6);
+    int year;
+    int month;
+    var yearString = Context.Request.Query["year"].ToString();
+    var monthString = Context.Request.Query["month"].ToString();
+    if (int.TryParse(yearString, out year))
+    {
+        if (year >= currentYear - 5 && year <= currentYear)
+        {
+            selectedYear = year;
+        }
+    }
+    if (int.TryParse(monthString, out month))
+    {
+        if (month >= 1 && month <= 12)
+        {
+            selectedMonth = month;
+        }
+    }
+    PartialLeave = PartialLeave?.Where(data => data.UpdatedAt.Year == selectedYear && data.UpdatedAt.Month == selectedMonth).ToList();
+}
+
+<form style="padding-top:20px;" method="get" action="~/Public/Attendance/partialLeaveList">
+    Year:-
+    <select name="year" style="width:15%">
+        @foreach (var years in previousYears.Reverse())
+        {
+            <option value="@years" @(years == selectedYear ? "selected" : "")>@years</option>
+        }
+    </select>
+
+    Month :-
+    <select name="month" style="width:15%">
+        @foreach (var getmonth in months)
+        {
+            <option value="@getmonth.Key" @(getmonth.Key == selectedMonth ? "selected" : "")>@getmonth.Value</option>
+        }
+    </select>
+    <button type="submit" class="btn btn-info">Ok</button>
+</form>
+
+
+
+
+
+<section class="content">
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">Partial-Leave List</h3>
+        </div>
+        <div class="box-body">
+            <div class="table-responsive">
+                <table id="About" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>PauseTime</th>
+                            <th>ResumeTime</th>
+                            <th>Hours</th>
+                            <th>Detail</th>
+
+                        </tr>
+                    </thead>
+                    @if (PartialLeave != null)
+                    {
+                        <tbody>
+                            @{
+                                var n = 0;
+                            }
+                            @foreach (var PartialLeaveList in PartialLeave)
+                            {
+                                DateTime? resumeTimeUtc = PartialLeaveList.ResumeTime;
+                                DateTime? pauseTimeUtc = PartialLeaveList.PauseTime;
+                                TimeSpan totalHours;
+                                DateTime resumeTimeLocal;
+                                DateTime pauseTimeLocal;
+                                var indianTimeZone = TimeZoneInfo.FindSystemTimeZoneById("India Standard Time");
+                                if (resumeTimeUtc.HasValue || pauseTimeUtc.HasValue)
+                                {
+                                    resumeTimeLocal = TimeZoneInfo.ConvertTimeFromUtc(resumeTimeUtc ?? DateTime.MinValue, indianTimeZone);
+                                    pauseTimeLocal = TimeZoneInfo.ConvertTimeFromUtc(pauseTimeUtc ?? DateTime.MinValue, indianTimeZone);
+                                    totalHours = resumeTimeLocal - pauseTimeLocal;
+                                    <tr>
+                                        <td>@(++n)</td>
+                                        <td>@pauseTimeLocal</td>
+                                        
+
+                                        @if (resumeTimeUtc == null)
+                                        {
+                                            <td></td>
+                                            
+                                        }
+                                        else
+                                        {
+                                            <td>@resumeTimeLocal</td>
+                                        }
+                                        @if (resumeTimeUtc == null)
+                                        {
+                                            <td></td>
+                                        }
+                                        else
+                                        {
+                                            <td>@totalHours.ToString("hh\\:mm").PadLeft(4, '0')</td>
+                                        }
+                                       
+                                        <td>@PartialLeaveList.Detail</td>
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                    }
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,84 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/Layout/_LayoutAdmin.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+@*@{
+    var userData = ViewData["userData"] as List<UserOutput>;
+}*@
+
+@{
+    var userData = ViewData["userData"] as List<UserOutput>;
+
+    if (userData != null)
+    {
+        userData = userData.Where(user => user.Role != "admin" && user.IsActive).ToList();
+        //userData = userData.Where(user => user.Role != "admin").ToList();
+    }
+}
+
+@if (userData != null)
+{
+    <section class="content-header">
+        <div>
+            <h1>
+               User Attendance Details
+            </h1>
+        </div>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table id="About" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Role</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var data in userData)
+                                    {
+                                        <tr>
+                                            <td>@data.Id</td>
+                                            <td>@(data.FirstName + " " + data.LastName)</td>
+                                            <td>@data.Email</td>
+                                            <td>@data.Role</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        View
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="~/Admin/Leave/LeaveUserById/@data.Id">User Leave</a>
+                                                        <a class="dropdown-item" href="~/Admin/Attendance/AttendanceUserById/@data.Id">User Attendance</a>
+                                                        <a class="dropdown-item" href="~/Admin/Attendance/TimeSheetList/@data.Id">User Time-Sheet</a>
+                                                        <a class="dropdown-item" href="~/Admin/Attendance/partialLeave/@data.Id">Partial-Leave</a>
+                                                    </div>
+                                                </div>
+
+                                               
+
+                                            </td>
+                                         
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+}
+@await Component.InvokeAsync("Toaster")

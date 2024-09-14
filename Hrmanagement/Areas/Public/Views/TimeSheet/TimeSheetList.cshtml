@@ -1,0 +1,143 @@
+﻿@{
+    Layout = "~/Areas/Public/Views/Shared/Layout/_LayoutPublic.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+@{
+    var timeSheet = ViewData["timesheet"] as List<TimeSheetOutput>;
+    var projectList = ViewData["project"] as List<ProjectOutput>;
+
+
+    // 
+
+    var months = new Dictionary<int, string>
+{
+    { 1, "January" },
+    { 2, "February" },
+    { 3, "March" },
+    { 4, "April" },
+    { 5, "May" },
+    { 6, "June" },
+    { 7, "July" },
+    { 8, "August" },
+    { 9, "September" },
+    { 10, "October" },
+    { 11, "November" },
+    { 12, "December" }
+};
+    DateTime currentDate = DateTime.Now;
+    int currentYear = currentDate.Year;
+    int currentMonth = currentDate.Month;
+
+    int selectedYear = currentYear;
+    int selectedMonth = currentMonth;
+
+    var previousYears = Enumerable.Range(currentYear - 5, 6);
+    int year;
+    int month;
+
+    var yearString = Context.Request.Query["year"].ToString();
+    var monthString = Context.Request.Query["month"].ToString();
+
+    if (int.TryParse(yearString, out year))
+    {
+        if (year >= currentYear - 5 && year <= currentYear)
+        {
+            selectedYear = year;
+        }
+    }
+    if (int.TryParse(monthString, out month))
+    {
+        if (month >= 1 && month <= 12)
+        {
+            selectedMonth = month;
+        }
+    }
+    timeSheet = timeSheet?.Where(data => data.CreatedAt.Year == selectedYear && data.CreatedAt.Month == selectedMonth).ToList();
+}
+<form style="padding-top:20px;" method="get" action="~/Public/TimeSheet/TimeSheetList">
+    Year:-
+    <select name="year" style="width:15%">
+        @foreach (var years in previousYears.Reverse())
+        {
+           @* <option value="@years" @(currentYear == selectedYear ? "selected" : "")>@years</option>*@
+            @*<option value="@years" selected="@(currentYear == selectedYear ? "selected" : "")">@years</option>*@
+            <option value="@years" @(years == selectedYear ? "selected" : "")>@years</option>
+        }
+    </select>
+
+    Month :-
+    <select name="month" style="width:15%">
+        @foreach (var getmonth in months)
+        {
+            <option value="@getmonth.Key" @(getmonth.Key == selectedMonth ? "selected" : "")>@getmonth.Value</option>
+            @*<option value="@getmonth.Key" selected="@(currentMonths == getmonth.Key ? "selected" : null)">@getmonth.Value</option>*@
+            @*<option value="@getmonth.Key">@getmonth.Value</option>*@
+        }
+    </select>
+    <button type="submit" class="btn btn-info">Ok</button>
+</form>
+
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Time Sheet List</h3>
+                    @*<button class="btn btn-info pull-right" onclick="showModel('formSettingKey')"><i class="fa fa-plus"></i>Time-Sheet</button>*@
+                    <a class="btn btn-primary" href="~/Public/TimeSheet/AddUpdateTimeSheetForm" style="float:right;"> Add TimeSheet</a>
+                </div>
+                <div class="box-body">
+                    <div class="table-responsive">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>User-Name</th>
+                                    <th>Project-Name</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Hours</th>
+                                    <th>Day</th>
+                                    <th>Status</th>
+                                    <th>CreatedAt</th>
+                                    @* <th>Action</th>*@
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (timeSheet != null)
+                                {
+                                    var i = 0;
+
+                                    @foreach (var timesheetList in timeSheet)
+                                    {
+                                        <tr>
+                                            <td>@(++i)</td>
+                                            @* <td>@timesheetList.id</td>*@
+                                            <td>@timesheetList.UserName</td>
+                                            <td>@timesheetList.ProjectName</td>
+                                            <td>@timesheetList.TaskTitle</td>
+                                            <td>@timesheetList.TaskDescription</td>
+                                            <td>@timesheetList.Hours</td>
+                                            <td>@timesheetList.dayname</td>
+                                            <td>@timesheetList.Status</td>
+                                            <td>@timesheetList.CreatedAt</td>
+                                            <td>
+
+                                                <a class="btn btn-primary" href="~/Public/TimeSheet/AddUpdateTimeSheetForm/@timesheetList.id">Edit/View</a>
+                                                @* <a class="btn btn-danger" href="~/Public/TimeSheet/deleteByIdTimeSheet/@timesheetList.id"><i class="fa fa-trash"> </i> Delete</a>*@
+
+                                            </td>
+                                        </tr>
+                                    }
+
+                                }
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@await Component.InvokeAsync("Toaster")

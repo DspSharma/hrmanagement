@@ -1,0 +1,13 @@
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\bin\Debug\net6.0\Hrmanagement.Data.deps.json
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\bin\Debug\net6.0\Hrmanagement.Data.dll
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\bin\Debug\net6.0\Hrmanagement.Data.pdb
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\obj\Debug\net6.0\Hrmanagement.Data.csproj.AssemblyReference.cache
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\obj\Debug\net6.0\Hrmanagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\obj\Debug\net6.0\Hrmanagement.Data.AssemblyInfoInputs.cache
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\obj\Debug\net6.0\Hrmanagement.Data.AssemblyInfo.cs
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\obj\Debug\net6.0\Hrmanagement.Data.csproj.CoreCompileInputs.cache
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\obj\Debug\net6.0\Hrmanagement.Data.dll
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\obj\Debug\net6.0\refint\Hrmanagement.Data.dll
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\obj\Debug\net6.0\Hrmanagement.Data.pdb
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\obj\Debug\net6.0\ref\Hrmanagement.Data.dll
+E:\dotnet\hrmanagement-tagosys\Hrmanagement.Data\obj\Debug\net6.0\Hrmanagement.Data.sourcelink.json

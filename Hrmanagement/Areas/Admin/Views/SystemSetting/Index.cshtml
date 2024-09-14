@@ -1,0 +1,230 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/Layout/_LayoutAdmin.cshtml";
+}
+
+@using Hrmanagement.Core.DTO.DtoOutput;
+@{
+    var systemSetting = ViewData["response"] as List<SystemSettingOutput>;
+   // var systemSettingTotalCount = ViewData["systemSettingTotalCount"];
+   // int count = Convert.ToInt32(systemSettingTotalCount);
+    //var pageNumber = 1;
+    //var r = 5;
+    //var pagedata = (int)Math.Ceiling((double)count / r);
+    //var ImportentLink = ViewData["ImportentLink"] as List<ImportentLinkOutput>;
+}
+<section class="content container-fluid">
+    <div class="box box-info">
+        <div class="box-header">
+            <h3 class="box-title">System Setting</h3>
+            <button class="btn btn-info pull-right" onclick="showModel('formSettingKey')"><i class="fa fa-plus"></i> New</button>
+        </div>
+        @*systemSetting Work Start*@
+        <div class="box-body">
+            <div class="table-responsive">
+                <table id="About" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Key</th>
+                            <th>Value</th>
+                            <th>IsActive</th>
+                            <th>CreatedAt</th>
+                            <th>UpdatedAt </th>
+                            <th>Action </th>
+                        </tr>
+                    </thead>
+                    @if (systemSetting != null)
+                    {
+                        <tbody>
+                            @foreach (var data in systemSetting)
+                            {
+                                <tr>
+                                    <td>@data.Id</td>
+                                    <td>@data.Key</td>
+                                    <td>@data.Value</td>
+                                    <td>
+                                        <select onchange="updateActiveInActiveStatus(@data.Id)">
+                                            @if (data.IsActive == true)
+                                            {
+                                                <option value="Active" selected>Active</option>
+                                                <option value="inActive">InActive</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="Active">Active</option>
+                                                <option value="inActive" selected>InActive</option>
+                                            }
+                                        </select>
+                                    </td>
+                                    <td>@data.CreatedAt</td>
+                                    <td>@data.UpdatedAt</td>
+                                    <td>
+                                        <a class="btn btn-primary" href="#" onclick="editViewData(@data.Id)">Edit/View</a>
+                                        <a class="btn btn-danger" href="#" onclick="confirmDelete('@data.Id')">
+                                            <i class="fa fa-trash"></i> Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    }
+                </table>
+            </div>
+            @*pagination Work Start*@
+           @* <div class="paginationE active " style="margin-left:40px;">
+                @for (pageNumber = 1; pageNumber <= pagedata; pageNumber++)
+                {
+                    <a href="@Url.Action("Index", new { page = pageNumber, record = r })">@pageNumber</a>
+                }
+            </div>*@
+            @*pagination Work End*@
+        </div>
+
+
+        <!-- Modal for System Setting Work Start-->
+        <div class="modal fade" id="formSettingKeyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Add form option</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" class="form-control" id="formSettingKeyId" name="formSettingKeyId" />
+
+                        <label for="formSettingKey" class="">Key:</label>
+                        <input type="text" class="form-control" id="formSettingKey" name="formSettingKey" placeholder="Enter key"><br />
+
+                        <label for="formSettingValue" class="">Value:</label>
+                        <input type="text" class="form-control" id="formSettingValue" name="formSettingValue" placeholder="Enter Value"><br />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="cancelAndReloadPage()">Cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="createNewKeyValue('formSettingKey', event)">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for System Setting Work End-->
+    </div>
+
+    <script>
+        // SystemSetting Work Start
+        function cancelAndReloadPage() {
+            location.reload();
+        }
+
+        $(document).ready(function () {
+            $(".form-control").css({ "display": "inline-block", "width": "90%" });
+            $(".control-label").css({ "display": "block" });
+        });
+        function showModel(modalId) {
+            $(`#${modalId}`).val('');
+            $(`#${modalId}Modal`).modal('show');
+        }
+        function createNewKeyValue(KeyElId, event) {
+            var keyInput = document.getElementById(KeyElId);
+            var keyName = keyInput.value.trim();
+            var valueInput = document.getElementById('formSettingValue');
+            var valueName = valueInput ? valueInput.value.trim() : '';
+            var valueKyId = document.getElementById('formSettingKeyId').value || 0;
+            var modalId = `${KeyElId}Modal`;
+            var Nameregex = /\b.*[a-zA-Z ].\b/;
+            var noStartingSpaceRegex = /^(?!\s).*/;
+            if (keyName === '') {
+                toastr.error("Key is required");
+                return;
+            }
+            else if (keyName.length < 2 || keyName.length > 50) {
+                toastr.error("Key should be between minlength 2 and maxlength 50");
+                return;
+            }
+            else if (!keyName.match(Nameregex)) {
+                toastr.error("Key should contain only alphabetic characters");
+                return;
+            }
+            else if (valueName === '') {
+                toastr.error("Value is required");
+                return;
+            }
+            else if (!valueName.match(noStartingSpaceRegex)) {
+                toastr.error("Value is not a Startin Space");
+                return;
+            }
+            else if (valueName.length < 1 || valueName.length > 100) {
+                toastr.error("Value should be between minlength 1 and maxlength 100");
+                return;
+            }
+            var dataToSend = {
+                "Id": valueKyId,
+                "Key": keyName,
+                "Value": valueName,
+            };
+            console.log(dataToSend);
+            $.ajax({
+                type: 'POST',
+                dataType: "json",
+                data: JSON.stringify(dataToSend),
+                url: "/../../Admin/SystemSetting/AddUpdate",
+                // url: "http://192.168.0.32:5001/api/SystemSetting/AddUpdateSystemSetting",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                success: function (response) {
+                    var data = response.data;
+                    toastr.success('Data Add Save Successfully');
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000);
+                },
+                error: function (xhr, status, error) {
+                    toastr.success('Data Add Save Successfully');
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000);
+                }
+            });
+            $(`#${modalId}`).modal('hide');
+            document.getElementById(KeyElId).value = '';
+            valueInput.value = '';
+            $(".form-control").css({ "display": "inline-block", "width": "90%" });
+            $(".control-label").css({ "display": "block" });
+        }
+        function editViewData(id) {
+            $.ajax({
+                type: 'GET',
+                dataType: "json",
+                url: `/../../Admin/SystemSetting/getEditById/${id}`,
+                success: function (response) {
+                    if (response) {
+                        var data = response.data;
+                        $('#formSettingKeyId').val(data.id);
+                        // $('#formSettingKey').val(data.key);
+                        if (data.id) {
+                            $('#formSettingKey').val(data.key).prop('readonly', true);
+                            // $('#formSettingKey').prop('readonly', true);
+                        } else {
+                            $('#formSettingKey').prop('readonly', false);
+                        }
+                        $('#formSettingValue').val(data.value);
+                        $('#formSettingKeyModal').modal('show');
+                    } else {
+                        console.error('Error fetching data.');
+                    }
+                },
+            });
+        }
+        function updateActiveInActiveStatus(Id) {
+            window.location.href = "/../../Admin/SystemSetting/ActiveInActive/" + Id
+        }
+        function confirmDelete(itemId) {
+            if (confirm("Are you sure you want to delete this item?")) {
+                window.location.href = '/../../Admin/SystemSetting/systemSettingDeleteById/' + itemId;
+            } else {
+
+            }
+        }
+        // SystemSetting Work End
+    </script>

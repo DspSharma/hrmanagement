@@ -1,0 +1,28 @@
+﻿@{
+    var controller = ViewContext.RouteData.Values["Controller"].ToString();
+    var action = ViewContext.RouteData.Values["Action"].ToString();
+    string route = $"{controller}-{action}";
+}
+
+<ul class="sidebar-menu" data-widget="tree">
+    <li class="header">HEADER</li>
+    <li id="SystemSetting-Index"><a href="~/Admin/SystemSetting/Index"><i class="fa fa-cog"></i><span>System-Setting</span></a></li>
+    <li id="User-userList"><a href="~/Admin/User/userList"><i class="fa fa-user"></i><span>User</span></a></li>
+    <li id="User-userAttendanceDetail"><a href="~/Admin/User/userAttendanceDetail"><i class="fa fa-users"></i><span>user Attendance Detail</span></a></li>
+    <li id="Holiday-holidayList"><a href="~/Admin/Holiday/holidayList"><i class="fa fa-bell"></i><span>Holiday</span></a></li>
+    <li id="Journey-journeyList"><a href="~/Admin/Leave/userLeaveList"><i class="fa fa-map"></i><span>Leave</span></a></li>
+    <li id="ApiCredentials-ApiCredentialList"><a href="~/Admin/ApiCredentials/ApiCredentialList"><i class="fa fa-map"></i><span>Api-Credentials</span></a></li>
+    <li id="Project-ProjectList"><a href="~/Admin/Project/ProjectList"><i class="fa fa-map"></i><span>Project</span></a></li>
+    <li id="Auth-Logout"><a href="~/Admin/Auth/Logout"><i class="fa fa-sign-out"></i><span>LogOut</span></a></li>
+</ul>
+
+<script>
+    $(document).ready(function () {
+        $("#@route.Replace("-", "_")").addClass('active');
+    });
+
+    $('ul.sidebar-menu li').click(function () {
+        $('ul.sidebar-menu li').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>

@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "~/Areas/Public/Views/Shared/Layout/_LayoutPublic.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+@{
+    var holidayData = (ViewData["holidayData"] as List<HolidayOutput>)?.Where(h => h.IsActive == true).ToList();
+}
+@if (holidayData != null)
+{
+    <section class="content-header">
+        <div>
+            <h1>
+                Holiday List
+            </h1>
+        </div>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table id="About" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Title</th>
+                                        <th>FromDate</th>
+                                        <th>ToDate</th>
+                                        <th>TotalDays</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        var n = 0;
+                                    }
+                                    @foreach (var data in holidayData)
+                                    {
+                                        <tr>
+                                            <td>@(++n)</td>
+                                            @*<td>@data.Id</td>*@
+                                            <td>@data.Title</td>
+                                            <td>@data.HolidayFromDate</td>
+                                            <td>@data.HolidayToDate</td>
+                                            <td>@data.TotalDays</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+@await Component.InvokeAsync("Toaster")

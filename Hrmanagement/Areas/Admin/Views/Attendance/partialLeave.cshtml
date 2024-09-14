@@ -1,0 +1,159 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/Layout/_LayoutAdmin.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+
+
+@{
+    var partialData = ViewData["partialLeaveData"] as List<PartialLeaveOutput>;
+    var id = ViewData["id"];
+    var months = new Dictionary<int, string>
+{
+    { 1, "January" },
+    { 2, "February" },
+    { 3, "March" },
+    { 4, "April" },
+    { 5, "May" },
+    { 6, "June" },
+    { 7, "July" },
+    { 8, "August" },
+    { 9, "September" },
+    { 10, "October" },
+    { 11, "November" },
+    { 12, "December" }
+};
+    DateTime currentDate = DateTime.Now;
+    int currentYear = currentDate.Year;
+    int currentMonth = currentDate.Month;
+    int selectedYear = currentYear;
+    int selectedMonth = currentMonth;
+    var previousYears = Enumerable.Range(currentYear - 5, 6);
+    int year;
+    int month;
+    var yearString = Context.Request.Query["year"].ToString();
+    var monthString = Context.Request.Query["month"].ToString();
+    if (int.TryParse(yearString, out year))
+    {
+        if (year >= currentYear - 5 && year <= currentYear)
+        {
+            selectedYear = year;
+        }
+    }
+    if (int.TryParse(monthString, out month))
+    {
+        if (month >= 1 && month <= 12)
+        {
+            selectedMonth = month;
+        }
+    }
+    partialData = partialData?.Where(data => data.UpdatedAt.Year == selectedYear && data.UpdatedAt.Month == selectedMonth).ToList();
+}
+
+
+<form style="padding-top:20px;" method="get" action="~/Admin/Attendance/partialLeave">
+    <input  type="hidden" id="id" name="id" value="@id" />
+    Year:-
+    <select name="year" style="width:15%">
+        @foreach (var years in previousYears.Reverse())
+        {
+            <option value="@years" @(years == selectedYear ? "selected" : "")>@years</option>
+        }
+    </select>
+
+    Month :-
+    <select name="month" style="width:15%">
+        @foreach (var getmonth in months)
+        {
+            <option value="@getmonth.Key" @(getmonth.Key == selectedMonth ? "selected" : "")>@getmonth.Value</option>
+        }
+    </select>
+    <button type="submit" class="btn btn-info">Ok</button>
+</form>
+
+
+@if (partialData != null)
+{
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table id="About" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>UserName</th>
+                                        <th>PauseTime</th>
+                                        <th>ResumeTime</th>
+                                        <th>Hours</th>
+                                        <th>Detail</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        var n = 0;
+                                    }
+                                    @foreach (var data in partialData)
+                                    {
+
+                                        DateTime? resumeTimeUtc = data.ResumeTime;
+                                        DateTime? pauseTimeUtc = data.PauseTime;
+                                        TimeSpan totalHours;
+                                        DateTime resumeTimeLocal;
+                                        DateTime pauseTimeLocal;
+                                        var indianTimeZone = TimeZoneInfo.FindSystemTimeZoneById("India Standard Time");
+                                        if (resumeTimeUtc.HasValue || pauseTimeUtc.HasValue)
+                                        {
+                                            resumeTimeLocal = TimeZoneInfo.ConvertTimeFromUtc(resumeTimeUtc ?? DateTime.MinValue, indianTimeZone);
+                                            pauseTimeLocal = TimeZoneInfo.ConvertTimeFromUtc(pauseTimeUtc ?? DateTime.MinValue, indianTimeZone);
+                                            totalHours = resumeTimeLocal - pauseTimeLocal;
+                                            <tr>
+                                                <td>@(
+                                            ++n
+                                            )</td>
+                                                <td>@data.Username</td>
+                                                <td>@pauseTimeLocal</td>
+
+
+                                                @if (resumeTimeUtc == null)
+                                                {
+                                                    <td></td>
+
+                                                }
+                                                else
+                                                {
+                                                    <td>@resumeTimeLocal</td>
+                                                }
+                                                @if (resumeTimeUtc == null)
+                                                {
+                                                    <td></td>
+                                                }
+                                                else
+                                                {
+                                                    <td>@totalHours.ToString("hh\\:mm").PadLeft(4, '0')</td>
+                                                }
+
+                                                <td>@data.Detail</td>
+                                            </tr>
+                                        }
+
+                                       
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+}
+
+@await Component.InvokeAsync("Toaster")

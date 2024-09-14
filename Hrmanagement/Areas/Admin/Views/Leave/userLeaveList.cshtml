@@ -1,0 +1,145 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/Layout/_LayoutAdmin.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+@{
+    var leaveData = ViewData["leaveData"] as List<LeaveOutput>;
+    //var checkType = Context.Request.Query["isActive"].ToString();
+
+}
+
+
+<section class="content-header">
+    <div>
+        
+        <h4>
+            Leave List
+
+            <select id="isActiveSelect" name="isActive" style="margin-left:5%;" onchange="handleSelectChange()">
+                <option value="all" @(Context.Request.Query["filter"] == "all" ? "selected" : "")>All</option>
+                <option value="approved" @(Context.Request.Query["filter"] == "approved" ? "selected" : "")>Approve</option>
+                <option value="rejected" @(Context.Request.Query["filter"] == "rejected" ? "selected" : "")>Rejected</option>
+                <option value="pending" @(Context.Request.Query["filter"] == "pending" ? "selected" : "")>Pending</option>
+            </select>
+        </h4>
+    </div>
+</section>
+
+@if (leaveData != null)
+{
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+
+                    <div class="box-body">
+                        <div class="table-responsive">
+                            <table id="About" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>User Name</th>
+                                        <th>From Date</th>
+                                        <th>To Date</th>
+                                        <th>Status</th>
+                                        <th>Total Days</th>
+                                        <th>View</th>
+                                        @*<th>status</th>*@
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        var i = 0;
+                                    }
+                                    @foreach (var leave in leaveData)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @(
+                                                    ++i
+                                                    )
+                                            </td>
+                                            <td>@leave.UserName</td>
+                                            <td>@leave.LeaveFromDate</td>
+                                            <td>@leave.LeaveToDate</td>
+                                            <td>
+                                                @if (leave.IsLeaveApproved == true)
+                                                {
+
+                                                    <h4 style="background-color:green;width:50%;height:26px;color:white;">Approved</h4>
+                                                }
+                                                else if (leave.IsRejected == true)
+                                                {
+
+                                                    <h4 style="background-color:red;width:50%;height:26px;color:white;">Rejected</h4>
+                                                }
+                                                else
+                                                {
+
+                                                    <h4 style="background-color:yellow;width:50%;height:26px;color:blue;">Pending</h4>
+                                                }
+                                            </td>
+                                            <td>@leave.TotalLeaveDays</td>
+                                            @*<td>@leave.TotalLeaveDays</td>*@
+
+                                            <td>
+                                                <a class="dropdown-item" href="~/Admin/Leave/leaveById/@leave.Id">View</a><br>
+                                            </td>
+                                            @* <td>
+                                    @leave.IsLeaveApproved
+                                    </td>*@
+
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+}
+
+<script>
+    function handleSelectChange() {
+        var selectElement = document.getElementById("isActiveSelect");
+        var selectedValue = selectElement.value;
+
+        updateData(selectedValue);
+        updateURLParams(selectedValue);
+    }
+    function updateData(selectedValue) {
+
+        $.ajax({
+           // url: '/Admin/User/userList',
+            url: '/Admin/Leave/userLeaveList',
+            data: { filter: selectedValue },
+            success: function (response) {
+                location.reload();
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
+    }
+
+    function updateURLParams(selectedValue) {
+        var newUrl = window.location.href.split('?')[0] + '?filter=' + selectedValue;
+        history.pushState({}, '', newUrl);
+    }
+</script>
+
+
+
+
+
+
+
+
+
+

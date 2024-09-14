@@ -1,0 +1,2181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAF4C65-F599-447E-B248-CDD7F63BA25E}|..\\Hrmanagement_Api\\Hrmanagement_Api.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5080CFED-00A3-40F5-A85F-CAAA071FC18D}|..\\Hrmanagement.Data\\Hrmanagement.Data.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement.data\\hrmanagement.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E032E8E7-CAB1-4715-8910-7CE7D1C69B6B}|..\\Hrmanagement.Service\\Hrmanagement.Service.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement.service\\holidayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\project\\projectlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\project\\projectlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\leave\\getuserleave.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\leave\\getuserleave.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\mvcholidayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\mvcholidayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\apiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\apiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\authservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18FF6752-062C-455D-8E46-95DCD0536618}|..\\Hrmanagement.Core\\Hrmanagement.Core.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement.core\\constants\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E032E8E7-CAB1-4715-8910-7CE7D1C69B6B}|..\\Hrmanagement.Service\\Hrmanagement.Service.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement.service\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\attendance\\getattendanceuserby.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\attendance\\getattendanceuserby.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\mvcattendanceservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\mvcattendanceservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAF4C65-F599-447E-B248-CDD7F63BA25E}|..\\Hrmanagement_Api\\Hrmanagement_Api.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement_api\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAF4C65-F599-447E-B248-CDD7F63BA25E}|..\\Hrmanagement_Api\\Hrmanagement_Api.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement_api\\controllers\\holidaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAF4C65-F599-447E-B248-CDD7F63BA25E}|..\\Hrmanagement_Api\\Hrmanagement_Api.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement_api\\controllers\\leavecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\shared\\partial\\publicmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\shared\\partial\\publicmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E032E8E7-CAB1-4715-8910-7CE7D1C69B6B}|..\\Hrmanagement.Service\\Hrmanagement.Service.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement.service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5080CFED-00A3-40F5-A85F-CAAA071FC18D}|..\\Hrmanagement.Data\\Hrmanagement.Data.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement.data\\entities\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\controllers\\holidaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\controllers\\holidaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\controllers\\attendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAF4C65-F599-447E-B248-CDD7F63BA25E}|..\\Hrmanagement_Api\\Hrmanagement_Api.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement_api\\controllers\\httpcontextwrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\controllers\\holidaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\controllers\\holidaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\controllers\\checksessionisavailablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\controllers\\checksessionisavailablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\shared\\layout\\_layoutpublic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\shared\\layout\\_layoutpublic.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAF4C65-F599-447E-B248-CDD7F63BA25E}|..\\Hrmanagement_Api\\Hrmanagement_Api.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement_api\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAF4C65-F599-447E-B248-CDD7F63BA25E}|..\\Hrmanagement_Api\\Hrmanagement_Api.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAF4C65-F599-447E-B248-CDD7F63BA25E}|..\\Hrmanagement_Api\\Hrmanagement_Api.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement_api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E032E8E7-CAB1-4715-8910-7CE7D1C69B6B}|..\\Hrmanagement.Service\\Hrmanagement.Service.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement.service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCAF4C65-F599-447E-B248-CDD7F63BA25E}|..\\Hrmanagement_Api\\Hrmanagement_Api.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\index\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\index\\userprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\index\\latlongwork.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\index\\latlongwork.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\index\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\index\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\usermemo\\usermemolist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\usermemo\\usermemolist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\usermemo\\usermemolist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\usermemo\\usermemolist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\leave\\leavebyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\leave\\leavebyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\holiday\\holidaylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\holiday\\holidaylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\mvcprojectservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\mvcprojectservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\attendance\\attendanceuserbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\attendance\\attendanceuserbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\leave\\leaveuserbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\leave\\leaveuserbyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\wwwroot\\admin\\js\\validation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:wwwroot\\admin\\js\\validation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\controllers\\leavecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\controllers\\leavecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\leave\\leavebyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\leave\\leavebyid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\holiday\\addupdateholidayform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\holiday\\addupdateholidayform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\attendance\\timesheetlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\attendance\\timesheetlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\shared\\layout\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\shared\\layout\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\leave\\userleavelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\leave\\userleavelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\mvcleaveservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\mvcleaveservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\user\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\user\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\mvcusermemoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\mvcusermemoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\controllers\\usermemocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\controllers\\usermemocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\interfaces\\imvcusermemoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\interfaces\\imvcusermemoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\timesheet\\timesheetlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\timesheet\\timesheetlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\user\\userattendancedetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\user\\userattendancedetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\controllers\\timesheetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\controllers\\timesheetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\interfaces\\imvcattendanceservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\interfaces\\imvcattendanceservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\mvctimesheetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\mvctimesheetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\controllers\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\controllers\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\project\\addupdateprojectform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\project\\addupdateprojectform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\timesheet\\addupdatetimesheetform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\timesheet\\addupdatetimesheetform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\user\\addupdateuserform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\user\\addupdateuserform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\controllers\\leavecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\controllers\\leavecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\wwwroot\\admin\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:wwwroot\\admin\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\interfaces\\imvcleaveservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\interfaces\\imvcleaveservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\shared\\partial\\adminmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\shared\\partial\\adminmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\apicredentials\\addupdateapicredentialform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\apicredentials\\addupdateapicredentialform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\public\\views\\holiday\\holidaylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\public\\views\\holiday\\holidaylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\controllers\\apicredentialscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\controllers\\apicredentialscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\mvcsystemsettingservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\mvcsystemsettingservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\services\\mvcapicredentialsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:services\\mvcapicredentialsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\areas\\admin\\views\\apicredentials\\apicredentiallist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:areas\\admin\\views\\apicredentials\\apicredentiallist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\hrmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:hrmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131055855_intailanMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131054314_CreateprojectTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131052938_CreateprojectTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|e:\\project\\testzipproject\\hrmanagement-tagosys\\hrmanagement\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D5C991DF-4607-41E0-A970-0D804E4ED27D}|Hrmanagement.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Constants\\Constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HolidayController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\UserService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\AttendanceService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\LeaveService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\HolidayService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\PartialLeaveService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\LeaveController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\UserMemoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\PartialLeaveController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HttpContextWrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AttendanceController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\TimeSheetController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\ProjectController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\ApiCredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\BaseEntitiy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Misc\\MiscMethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\TimeSheet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Leave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Holiday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\UserMemoService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\ProjectService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\EmailService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\ApiCredentialsService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\SystemSetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\TimeSheetService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\Hrmanagement.Service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\LeaveInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\GenericRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\AttendanceOutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\AttendanceInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\UserMemoOutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\LeaveOutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\SystemSettingService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Hrmanagement_Api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\ApiCredentialsOutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\DBContext\\HrManagementContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Mapping\\MappingProfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\ApiCredentialsInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\UnitOfWork\\UnitOfWork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\LeaveRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\Interfaces\\IHolidayRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\UnitOfWork\\IUnitOfWork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\HolidayInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hrmanagement.Data",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Data\\Hrmanagement.Data.csproj",
+              "RelativeDocumentMoniker": "..\\Hrmanagement.Data\\Hrmanagement.Data.csproj",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Data\\Hrmanagement.Data.csproj",
+              "RelativeToolTip": "..\\Hrmanagement.Data\\Hrmanagement.Data.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-14T09:54:00.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HolidayService.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Service\\HolidayService.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement.Service\\HolidayService.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Service\\HolidayService.cs",
+              "RelativeToolTip": "..\\Hrmanagement.Service\\HolidayService.cs",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAowK4AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T12:15:45.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MvcAttendanceServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcAttendanceServices.cs",
+              "RelativeDocumentMoniker": "Services\\MvcAttendanceServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcAttendanceServices.cs",
+              "RelativeToolTip": "Services\\MvcAttendanceServices.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAnwEgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:34:10.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApiServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\ApiServices.cs",
+              "RelativeDocumentMoniker": "Services\\ApiServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\ApiServices.cs",
+              "RelativeToolTip": "Services\\ApiServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:31:20.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAABwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-19T12:11:58.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MvcHolidayService.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcHolidayService.cs",
+              "RelativeDocumentMoniker": "Services\\MvcHolidayService.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcHolidayService.cs",
+              "RelativeToolTip": "Services\\MvcHolidayService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T09:00:36.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAApwAsAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-01T05:32:38.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HolidayController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HolidayController.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement_Api\\Controllers\\HolidayController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HolidayController.cs",
+              "RelativeToolTip": "..\\Hrmanagement_Api\\Controllers\\HolidayController.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAcwAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T10:38:49.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement_Api\\Program.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Program.cs",
+              "RelativeToolTip": "..\\Hrmanagement_Api\\Program.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAHMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T09:18:03.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "getAttendanceUserBy.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Attendance\\getAttendanceUserBy.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\Attendance\\getAttendanceUserBy.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Attendance\\getAttendanceUserBy.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\Attendance\\getAttendanceUserBy.cshtml",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAAAKoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T11:31:01.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "getUserLeave.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Leave\\getUserLeave.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\Leave\\getUserLeave.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Leave\\getUserLeave.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\Leave\\getUserLeave.cshtml",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAAACEBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T11:28:55.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProjectList.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Project\\ProjectList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Project\\ProjectList.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Project\\ProjectList.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Project\\ProjectList.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFoAAACNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T13:52:40.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AttendanceService.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Service\\AttendanceService.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement.Service\\AttendanceService.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Service\\AttendanceService.cs",
+              "RelativeToolTip": "..\\Hrmanagement.Service\\AttendanceService.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAmwHEAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T12:10:56.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Core\\Constants\\Constants.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement.Core\\Constants\\Constants.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Core\\Constants\\Constants.cs",
+              "RelativeToolTip": "..\\Hrmanagement.Core\\Constants\\Constants.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T11:26:42.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LeaveController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\LeaveController.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement_Api\\Controllers\\LeaveController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\LeaveController.cs",
+              "RelativeToolTip": "..\\Hrmanagement_Api\\Controllers\\LeaveController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAwwD4AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T08:50:47.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\BaseController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\BaseController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBoAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-01T10:45:02.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\AuthServices.cs",
+              "RelativeDocumentMoniker": "Services\\AuthServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\AuthServices.cs",
+              "RelativeToolTip": "Services\\AuthServices.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAUwBUAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-01T05:52:24.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "Areas\\Public\\Controllers\\AttendanceController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "Areas\\Public\\Controllers\\AttendanceController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowE8AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:12:28.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement_Api\\Controllers\\AttendanceController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "..\\Hrmanagement_Api\\Controllers\\AttendanceController.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAmwIsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T08:51:00.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_LayoutPublic.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Shared\\Layout\\_LayoutPublic.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\Shared\\Layout\\_LayoutPublic.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Shared\\Layout\\_LayoutPublic.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\Shared\\Layout\\_LayoutPublic.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-02T08:55:18.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PublicMenu.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Shared\\partial\\PublicMenu.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\Shared\\partial\\PublicMenu.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Shared\\partial\\PublicMenu.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\Shared\\partial\\PublicMenu.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-01T07:24:21.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HttpContextWrapper.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HttpContextWrapper.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement_Api\\Controllers\\HttpContextWrapper.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HttpContextWrapper.cs",
+              "RelativeToolTip": "..\\Hrmanagement_Api\\Controllers\\HttpContextWrapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T07:13:58.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Attendance.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement.Data\\Entities\\Attendance.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Attendance.cs",
+              "RelativeToolTip": "..\\Hrmanagement.Data\\Entities\\Attendance.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T11:24:34.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Service\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement.Service\\UserService.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Service\\UserService.cs",
+              "RelativeToolTip": "..\\Hrmanagement.Service\\UserService.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T11:22:59.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AttendanceController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\AttendanceController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-05T09:40:01.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HolidayController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\HolidayController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\HolidayController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\HolidayController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\HolidayController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T09:16:59.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CheckSessionIsAvailableController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\CheckSessionIsAvailableController.cs",
+              "RelativeDocumentMoniker": "Areas\\Public\\Controllers\\CheckSessionIsAvailableController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\CheckSessionIsAvailableController.cs",
+              "RelativeToolTip": "Areas\\Public\\Controllers\\CheckSessionIsAvailableController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:12:35.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HolidayController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\HolidayController.cs",
+              "RelativeDocumentMoniker": "Areas\\Public\\Controllers\\HolidayController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\HolidayController.cs",
+              "RelativeToolTip": "Areas\\Public\\Controllers\\HolidayController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:12:38.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.local.json",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.local.json",
+              "RelativeDocumentMoniker": "..\\Hrmanagement_Api\\appsettings.local.json",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.local.json",
+              "RelativeToolTip": "..\\Hrmanagement_Api\\appsettings.local.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-14T09:17:32.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\Hrmanagement_Api\\appsettings.json",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.json",
+              "RelativeToolTip": "..\\Hrmanagement_Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-14T09:14:53.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "..\\Hrmanagement_Api\\appsettings.Development.json",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.Development.json",
+              "RelativeToolTip": "..\\Hrmanagement_Api\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-14T09:14:47.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement.Service\\AuthService.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement.Service\\AuthService.cs",
+              "RelativeToolTip": "..\\Hrmanagement.Service\\AuthService.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAewCQAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:58:24.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\Hrmanagement_Api\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\Hrmanagement_Api\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA5wB0AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T06:51:20.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Constants\\Constants.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Constants\\Constants.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Constants\\Constants.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Constants\\Constants.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T07:27:58.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "latLongWork.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Index\\latLongWork.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\Index\\latLongWork.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Index\\latLongWork.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\Index\\latLongWork.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T06:23:51.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "HolidayController.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HolidayController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HolidayController.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HolidayController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HolidayController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwEIAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T08:48:58.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\AuthService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\AuthService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\AuthService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAjwGYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-10T06:02:40.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwC0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-01T05:52:14.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "userProfile.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Index\\userProfile.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\Index\\userProfile.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Index\\userProfile.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\Index\\userProfile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-01T08:39:34.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.json",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.json",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-01T05:17:03.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-01-31T06:05:31.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Index\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\Index\\Index.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Index\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\Index\\Index.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-02T08:52:53.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\UserService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\UserService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\UserService.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwDMAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-10T09:56:29.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "userMemoList.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\UserMemo\\userMemoList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\UserMemo\\userMemoList.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\UserMemo\\userMemoList.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\UserMemo\\userMemoList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-13T05:39:07.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "AttendanceService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\AttendanceService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\AttendanceService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\AttendanceService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\AttendanceService.cs",
+              "ViewState": "AQIAAGgBAAAAAAAAAAAtwHkBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-10T09:14:21.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "LeaveService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\LeaveService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\LeaveService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\LeaveService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\LeaveService.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwC0AAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-10T07:13:11.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "HolidayService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\HolidayService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\HolidayService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\HolidayService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\HolidayService.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAgwLYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:56:18.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-01-19T12:11:58.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "userMemoList.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\UserMemo\\userMemoList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\UserMemo\\userMemoList.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\UserMemo\\userMemoList.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\UserMemo\\userMemoList.cshtml",
+              "ViewState": "AQIAAOwAAAAAAAAAAAAqwNAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T11:36:29.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Program.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Program.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAI0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-19T12:11:58.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "PartialLeaveService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\PartialLeaveService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\PartialLeaveService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\PartialLeaveService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\PartialLeaveService.cs",
+              "ViewState": "AQIAABMBAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T14:03:59.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "leaveById.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Leave\\leaveById.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\Leave\\leaveById.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Leave\\leaveById.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\Leave\\leaveById.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-02T08:54:30.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "LeaveController.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\LeaveController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\LeaveController.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\LeaveController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\LeaveController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwEkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:53:10.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "holidayList.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Holiday\\holidayList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Holiday\\holidayList.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Holiday\\holidayList.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Holiday\\holidayList.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T08:58:49.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-01T05:44:59.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "UserMemoController.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\UserMemoController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\UserMemoController.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\UserMemoController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\UserMemoController.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAAwDQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T07:13:03.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "PartialLeaveController.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\PartialLeaveController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\PartialLeaveController.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\PartialLeaveController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\PartialLeaveController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T10:25:22.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "HttpContextWrapper.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HttpContextWrapper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HttpContextWrapper.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HttpContextWrapper.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\HttpContextWrapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T10:26:15.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "AttendanceController.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AttendanceController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AttendanceController.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AttendanceController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\AttendanceController.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAIwE4AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T11:05:13.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAACIAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:20:26.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "TimeSheetController.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\TimeSheetController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\TimeSheetController.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\TimeSheetController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\TimeSheetController.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAADcAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T10:34:17.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\ProjectController.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Controllers\\ProjectController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-10T05:17:06.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\User.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\User.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\User.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCEAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-26T13:22:40.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "ApiCredentials.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\ApiCredentials.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\ApiCredentials.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\ApiCredentials.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\ApiCredentials.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAiwCoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:39:19.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "BaseEntitiy.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\BaseEntitiy.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\BaseEntitiy.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\BaseEntitiy.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\BaseEntitiy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-26T13:23:00.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "Project.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Project.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Project.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Project.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Project.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T05:31:52.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "MiscMethods.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Misc\\MiscMethods.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Misc\\MiscMethods.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Misc\\MiscMethods.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Misc\\MiscMethods.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T06:16:48.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 111,
+              "Title": "TimeSheet.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\TimeSheet.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\TimeSheet.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\TimeSheet.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\TimeSheet.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T09:41:35.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-01-19T12:11:58.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Attendance.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Attendance.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Attendance.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Attendance.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T05:32:00.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 113,
+              "Title": "Leave.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Leave.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Leave.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Leave.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Leave.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA5wA0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T05:17:06.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 114,
+              "Title": "Holiday.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Holiday.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Holiday.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Holiday.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\Holiday.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T05:17:10.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "MvcProjectServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcProjectServices.cs",
+              "RelativeDocumentMoniker": "Services\\MvcProjectServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcProjectServices.cs",
+              "RelativeToolTip": "Services\\MvcProjectServices.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAkwBEAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:36:07.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ProjectController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ProjectController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCcAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-09T09:49:28.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "Services\\UserServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\UserServices.cs",
+              "RelativeToolTip": "Services\\UserServices.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAkwBQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:37:16.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCYAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:14:19.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 115,
+              "Title": "UserMemoService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\UserMemoService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\UserMemoService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\UserMemoService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\UserMemoService.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAvwLEAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-12T07:23:09.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 116,
+              "Title": "ProjectService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\ProjectService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\ProjectService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\ProjectService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\ProjectService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-10T10:08:12.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 117,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\EmailService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\EmailService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\EmailService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\EmailService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T11:03:24.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 118,
+              "Title": "ApiCredentialsService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\ApiCredentialsService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\ApiCredentialsService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\ApiCredentialsService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\ApiCredentialsService.cs",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAcwC0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:47:41.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 119,
+              "Title": "SystemSetting.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\SystemSetting.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\SystemSetting.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\SystemSetting.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Entities\\SystemSetting.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T09:48:50.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 120,
+              "Title": "TimeSheetService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\TimeSheetService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\TimeSheetService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\TimeSheetService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\TimeSheetService.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAlwGYAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-06T10:19:48.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 121,
+              "Title": "Hrmanagement.Service.csproj",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\Hrmanagement.Service.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\Hrmanagement.Service.csproj",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\Hrmanagement.Service.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\Hrmanagement.Service.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-06T13:12:19.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 122,
+              "Title": "LeaveInput.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\LeaveInput.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\LeaveInput.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\LeaveInput.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\LeaveInput.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:28:12.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AttendanceUserById.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Attendance\\AttendanceUserById.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Attendance\\AttendanceUserById.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Attendance\\AttendanceUserById.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Attendance\\AttendanceUserById.cshtml",
+              "ViewState": "AQIAAO8AAAAAAAAAAAAAAB4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-05T09:37:43.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "LeaveUserById.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Leave\\LeaveUserById.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Leave\\LeaveUserById.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Leave\\LeaveUserById.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Leave\\LeaveUserById.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAGAAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T11:46:28.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 123,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\GenericRepository.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\GenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T04:50:19.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "TimeSheetList.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Attendance\\TimeSheetList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Attendance\\TimeSheetList.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Attendance\\TimeSheetList.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Attendance\\TimeSheetList.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T05:12:12.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "LeaveController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\LeaveController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\LeaveController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\LeaveController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\LeaveController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowBgAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T08:42:28.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "leaveById.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Leave\\leaveById.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Leave\\leaveById.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Leave\\leaveById.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Leave\\leaveById.cshtml",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAAACoAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T11:48:26.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "validation.js",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\js\\validation.js",
+              "RelativeDocumentMoniker": "wwwroot\\admin\\js\\validation.js",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\js\\validation.js",
+              "RelativeToolTip": "wwwroot\\admin\\js\\validation.js",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAwwJAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-02-06T05:21:10.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AddUpdateHolidayForm.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Holiday\\AddUpdateHolidayForm.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Holiday\\AddUpdateHolidayForm.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Holiday\\AddUpdateHolidayForm.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Holiday\\AddUpdateHolidayForm.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T09:20:23.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-06T07:11:53.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "_AuthLayout.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Shared\\Layout\\_AuthLayout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\Layout\\_AuthLayout.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Shared\\Layout\\_AuthLayout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\Layout\\_AuthLayout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T07:44:04.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "userLeaveList.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Leave\\userLeaveList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Leave\\userLeaveList.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Leave\\userLeaveList.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Leave\\userLeaveList.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T08:58:38.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "IMvcUserMemoServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\Interfaces\\IMvcUserMemoServices.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IMvcUserMemoServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\Interfaces\\IMvcUserMemoServices.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IMvcUserMemoServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T10:12:05.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "MvcLeaveServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcLeaveServices.cs",
+              "RelativeDocumentMoniker": "Services\\MvcLeaveServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcLeaveServices.cs",
+              "RelativeToolTip": "Services\\MvcLeaveServices.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAnwCoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T08:44:48.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "userList.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\User\\userList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\userList.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\User\\userList.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\User\\userList.cshtml",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAHwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T05:27:30.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "TimeSheetList.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\TimeSheet\\TimeSheetList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\TimeSheet\\TimeSheetList.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\TimeSheet\\TimeSheetList.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\TimeSheet\\TimeSheetList.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACUAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-06T10:34:05.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 124,
+              "Title": "AttendanceOutput.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\AttendanceOutput.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\AttendanceOutput.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\AttendanceOutput.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\AttendanceOutput.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T05:51:03.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "MvcUserMemoServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcUserMemoServices.cs",
+              "RelativeDocumentMoniker": "Services\\MvcUserMemoServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcUserMemoServices.cs",
+              "RelativeToolTip": "Services\\MvcUserMemoServices.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAzwB4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:36:46.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "UserMemoController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\UserMemoController.cs",
+              "RelativeDocumentMoniker": "Areas\\Public\\Controllers\\UserMemoController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\UserMemoController.cs",
+              "RelativeToolTip": "Areas\\Public\\Controllers\\UserMemoController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:14:03.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "userAttendanceDetail.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\User\\userAttendanceDetail.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\userAttendanceDetail.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\User\\userAttendanceDetail.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\User\\userAttendanceDetail.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-05T11:43:24.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "TimeSheetController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\TimeSheetController.cs",
+              "RelativeDocumentMoniker": "Areas\\Public\\Controllers\\TimeSheetController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\TimeSheetController.cs",
+              "RelativeToolTip": "Areas\\Public\\Controllers\\TimeSheetController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwD0AAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-09T09:47:05.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "IMvcAttendanceServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\Interfaces\\IMvcAttendanceServices.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IMvcAttendanceServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\Interfaces\\IMvcAttendanceServices.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IMvcAttendanceServices.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBQAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-05T10:15:16.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "MvcTimeSheetService.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcTimeSheetService.cs",
+              "RelativeDocumentMoniker": "Services\\MvcTimeSheetService.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcTimeSheetService.cs",
+              "RelativeToolTip": "Services\\MvcTimeSheetService.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAcwDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T11:38:20.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "IndexController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\IndexController.cs",
+              "RelativeDocumentMoniker": "Areas\\Public\\Controllers\\IndexController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\IndexController.cs",
+              "RelativeToolTip": "Areas\\Public\\Controllers\\IndexController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAuwFIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:12:42.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 125,
+              "Title": "AttendanceInput.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\AttendanceInput.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\AttendanceInput.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\AttendanceInput.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\AttendanceInput.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-05T09:56:32.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "AddUpdateProjectForm.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Project\\AddUpdateProjectForm.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Project\\AddUpdateProjectForm.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Project\\AddUpdateProjectForm.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Project\\AddUpdateProjectForm.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-06T05:52:29.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "AddUpdateUserForm.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\User\\AddUpdateUserForm.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\AddUpdateUserForm.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\User\\AddUpdateUserForm.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\User\\AddUpdateUserForm.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T11:17:38.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "AddUpdateTimeSheetForm.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\TimeSheet\\AddUpdateTimeSheetForm.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\TimeSheet\\AddUpdateTimeSheetForm.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\TimeSheet\\AddUpdateTimeSheetForm.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\TimeSheet\\AddUpdateTimeSheetForm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T06:41:35.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "LeaveController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\LeaveController.cs",
+              "RelativeDocumentMoniker": "Areas\\Public\\Controllers\\LeaveController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Controllers\\LeaveController.cs",
+              "RelativeToolTip": "Areas\\Public\\Controllers\\LeaveController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T07:25:33.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 126,
+              "Title": "UserMemoOutput.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\UserMemoOutput.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\UserMemoOutput.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\UserMemoOutput.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\UserMemoOutput.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T10:46:38.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 127,
+              "Title": "LeaveOutput.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\LeaveOutput.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\LeaveOutput.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\LeaveOutput.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\LeaveOutput.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwBkAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T07:11:44.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "AdminMenu.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Shared\\partial\\AdminMenu.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\partial\\AdminMenu.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\Shared\\partial\\AdminMenu.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\partial\\AdminMenu.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T09:08:09.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "main.js",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\js\\main.js",
+              "RelativeDocumentMoniker": "wwwroot\\admin\\js\\main.js",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\js\\main.js",
+              "RelativeToolTip": "wwwroot\\admin\\js\\main.js",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADoAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-02-06T07:22:10.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "IMvcLeaveServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\Interfaces\\IMvcLeaveServices.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IMvcLeaveServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\Interfaces\\IMvcLeaveServices.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IMvcLeaveServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T05:40:41.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 128,
+              "Title": "SystemSettingService.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\SystemSettingService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\SystemSettingService.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\SystemSettingService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Service\\SystemSettingService.cs",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-01T06:31:34.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 129,
+              "Title": "Hrmanagement_Api.csproj",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Hrmanagement_Api.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Hrmanagement_Api.csproj",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Hrmanagement_Api.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement_Api\\Hrmanagement_Api.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-26T05:28:03.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "AddUpdateApiCredentialForm.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\ApiCredentials\\AddUpdateApiCredentialForm.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ApiCredentials\\AddUpdateApiCredentialForm.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\ApiCredentials\\AddUpdateApiCredentialForm.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ApiCredentials\\AddUpdateApiCredentialForm.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAB8AAACQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T06:49:57.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "holidayList.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Holiday\\holidayList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Public\\Views\\Holiday\\holidayList.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Public\\Views\\Holiday\\holidayList.cshtml",
+              "RelativeToolTip": "Areas\\Public\\Views\\Holiday\\holidayList.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACgAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-02T08:52:25.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "ApiCredentialsController.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\ApiCredentialsController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ApiCredentialsController.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Controllers\\ApiCredentialsController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ApiCredentialsController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAgwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T11:25:42.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "MvcSystemSettingServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcSystemSettingServices.cs",
+              "RelativeDocumentMoniker": "Services\\MvcSystemSettingServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcSystemSettingServices.cs",
+              "RelativeToolTip": "Services\\MvcSystemSettingServices.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAmwCcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:36:27.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "MvcApiCredentialsServices.cs",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcApiCredentialsServices.cs",
+              "RelativeDocumentMoniker": "Services\\MvcApiCredentialsServices.cs",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Services\\MvcApiCredentialsServices.cs",
+              "RelativeToolTip": "Services\\MvcApiCredentialsServices.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwD0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T09:33:40.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 130,
+              "Title": "ApiCredentialsOutput.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\ApiCredentialsOutput.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\ApiCredentialsOutput.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\ApiCredentialsOutput.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoOutput\\ApiCredentialsOutput.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:48:31.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "ApiCredentialList.cshtml",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\ApiCredentials\\ApiCredentialList.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\ApiCredentials\\ApiCredentialList.cshtml",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Areas\\Admin\\Views\\ApiCredentials\\ApiCredentialList.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\ApiCredentials\\ApiCredentialList.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAArwC0AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-31T06:50:11.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 131,
+              "Title": "HrManagementContext.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\DBContext\\HrManagementContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\DBContext\\HrManagementContext.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\DBContext\\HrManagementContext.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\DBContext\\HrManagementContext.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-26T12:45:38.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 132,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Mapping\\MappingProfile.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\Mapping\\MappingProfile.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T07:25:12.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 133,
+              "Title": "ApiCredentialsInput.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\ApiCredentialsInput.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\ApiCredentialsInput.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\ApiCredentialsInput.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\ApiCredentialsInput.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:48:16.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 134,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:34:44.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 135,
+              "Title": "LeaveRepository.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\LeaveRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\LeaveRepository.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\LeaveRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\LeaveRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:33:24.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 136,
+              "Title": "IHolidayRepository.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\Interfaces\\IHolidayRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\Interfaces\\IHolidayRepository.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\Interfaces\\IHolidayRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Repositories\\Interfaces\\IHolidayRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:32:47.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 137,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:34:29.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 138,
+              "Title": "HolidayInput.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\HolidayInput.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\HolidayInput.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\HolidayInput.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Core\\DTO\\DtoInput\\HolidayInput.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T06:28:15.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Hrmanagement.csproj",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Hrmanagement.csproj",
+              "RelativeDocumentMoniker": "Hrmanagement.csproj",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\Hrmanagement.csproj",
+              "RelativeToolTip": "Hrmanagement.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-06T05:00:42.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "20240131055855_intailanMigration.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131055855_intailanMigration.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131055855_intailanMigration.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131055855_intailanMigration.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131055855_intailanMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T05:58:55.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "20240131054314_CreateprojectTable.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131054314_CreateprojectTable.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131054314_CreateprojectTable.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131054314_CreateprojectTable.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131054314_CreateprojectTable.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T05:43:15.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "20240131052938_CreateprojectTable.cs",
+              "DocumentMoniker": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131052938_CreateprojectTable.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131052938_CreateprojectTable.cs",
+              "ToolTip": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131052938_CreateprojectTable.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\dotnet\\hrmanagement-tagosys\\Hrmanagement.Data\\Migrations\\20240131052938_CreateprojectTable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-31T05:29:38.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
+              "ToolTip": "E:\\Project\\testzipProject\\hrmanagement-tagosys\\Hrmanagement\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "ScaffoldingReadMe.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-01-19T12:11:58.452Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

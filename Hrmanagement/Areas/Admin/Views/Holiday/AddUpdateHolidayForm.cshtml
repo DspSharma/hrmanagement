@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/Layout/_LayoutAdmin.cshtml";
+}
+
+@using Hrmanagement.Core.DTO.DtoOutput;
+@{
+    var holidayId = ViewData["holiday"] as HolidayOutput;
+    int id = holidayId != null ? holidayId.Id : 0;
+}
+
+<section class="content container-fluid">
+    <div class="card">
+        <div class="card-header">
+            @if (id != 0)
+            {
+                <h3 class="card-title">Holiday Page-Update</h3>
+            }
+            else
+            {
+                <h3 class="card-title">Create New Holiday</h3>
+            }
+        </div>
+        <form class="card-body" method="post" action="~/Admin/Holiday/AddUpdateHoliday" onsubmit="return addUpdateHoliday()">
+            <input type="hidden" name="Id" value="@holidayId?.Id">
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="firstName" class="col-form-label col-sm-2">FromDate</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="holidayFromDate" name="HolidayFromDate" placeholder="HolidayFromDate" value="@holidayId?.HolidayFromDate.ToString("yyyy-MM-dd")">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="lastName" class="col-form-label col-sm-2">ToDate</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="holidayToDate" name="HolidayToDate" placeholder="HolidayToDate" value="@holidayId?.HolidayToDate.ToString("yyyy-MM-dd")">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="email" class="col-form-label col-sm-2">Title</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="title" name="Title" placeholder="Title" value="@holidayId?.Title">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-info float-left">Save</button>
+            </div>
+        </form>
+    </div>
+</section>
+<script>
+    function getTodayDate() {
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const day = String(today.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    }
+    document.getElementById("holidayFromDate").setAttribute("min", getTodayDate());
+    function updateMinToDate() {
+        const fromDateValue = document.getElementById("holidayFromDate").value;
+        document.getElementById("holidayToDate").setAttribute("min", fromDateValue);
+    }
+    document.getElementById("holidayFromDate").addEventListener("change", updateMinToDate);
+</script>
+@await Component.InvokeAsync("Toaster")

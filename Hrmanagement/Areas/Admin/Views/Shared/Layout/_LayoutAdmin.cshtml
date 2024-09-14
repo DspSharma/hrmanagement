@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html2>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title id="nametitle"></title>
+
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/admin/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/admin/bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="/admin/bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/admin/dist/css/skins/skin-blue.min.css">
+    <!-- DataTables CSS: -->
+    <link rel="stylesheet" href="/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <!-- Google Font -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <!--jQuery:-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    @* <script src="/admin/bower_components/jquery/dist/jquery.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <!--Other Custom JavaScript Files:-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/admin/js/toastr.js"></script>
+    <script src="/admin/js/validation.js"></script>
+    @* <script src="/admin/js/validation.js"></script>*@
+    <link rel="stylesheet" href="/admin/css/site.css">
+    <script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini" style="margin-top:40px;">
+    <div class="wrapper">
+
+        <header class="main-header adminheader">
+            @inject IHttpContextAccessor contextAccessors;
+
+             @{
+            string imagePath = @contextAccessors.HttpContext.Session.GetString("role");
+
+            }
+            <a href="~/images/Image/1a2c501e-e07c-43f6-b21f-078a8d175cbb_logoimage.jpg" id="logoschool" class="logo">
+
+                <span class="logo-mini" id="namemin"></span>
+                <span class="logo-lg"><b id="schoolName"></b></span>
+            </a>
+            <nav class="navbar navbar-fixed-top" role="navigation">
+                <a href="#" style="position: absolute;" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+
+               @* @await Component.InvokeAsync("State")*@
+
+                @* <select id="vehicleType" name="VehicleType" style="width: 15%;margin-left:-30%;" required>
+                <option value="">Select City</option>
+
+                </select>*@
+
+                @*<div class="navbar-custom-menu" style=" position: absolute; right:10px;">
+                <ul class="nav navbar-nav">
+                <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="~/admin//images/user1.jpg" id="" class="user-image" alt="User Image">
+                </a>
+
+                <ul class="dropdown-menu">
+
+                <li class="user-header">
+                <img src="~/admin//images/user1.jpg" class="user-image" alt="User Image">
+                </li>
+
+                <li class="user-body">
+                <div class="row">
+                </div>
+
+                </li>
+
+                <li class="user-footer">
+                <div class="pull-left">
+
+                </div>
+                <div class="pull-right">
+                <a href="">
+                <img src="~/admin/images/logout.jpg" class="user-image" alt="User Image">
+                <span class="hidden-xs">Logout</span>
+                </a>
+                </div>
+                </li>
+                </ul>
+                </li>
+
+                </ul>
+                </div>*@
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="~/admin/images/icons/userimage.png" alt="AVATAR" style="width:40px;">
+                    </div>
+                    <div class="pull-left info">
+
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+                <!-- search form (Optional) -->
+                @*<form action="~/Views/Shared/UserMainMenu" method="get" class="sidebar-form">
+                <div class="input-group">
+                <input type="text"  id="searchInput" name="" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                <i class="fa fa-search"></i>
+                </button>
+                </span>
+                </div>
+                </form>*@
+
+                @Html.Partial("~/Areas/Admin/Views/Shared/partial/AdminMenu.cshtml")
+
+
+                <!-- /.search form -->
+                <!-- Sidebar Menu -->
+                @* @Html.Partial("UserMainMenu")*@
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <script>
+                AmagiLoader.show();
+            </script>
+            @RenderBody()
+
+            <script>
+                AmagiLoader.hide();
+            </script>
+            @*@Html.Partial("~/Areas/Admin/Views/Shared/partial/Loading.cshtml")*@
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!-- Default to the left -->
+
+            <strong>Copyright &copy; 2023@* <a href="https://codinginfinite.com">CodingInfinite</a>.*@</strong> All rights reserved.
+            <span><b id="namedowmbar"></b></span>
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+    <!-- REQUIRED JS SCRIPTS -->
+    <!-- jQuery 3 -->
+    <!-- Bootstrap 3.3.7 -->
+    <script src="/admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/admin/dist/js/adminlte.min.js"></script>
+
+    <script src="/admin/js/main.js"></script>
+    @*  <script src="/Public/Template1/js/main.js"></script>*@
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Hrmanagement
+build_property.RootNamespace = Hrmanagement
+build_property.ProjectDir = E:\Project\testzipProject\hrmanagement-tagosys\Hrmanagement\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Project\testzipProject\hrmanagement-tagosys\Hrmanagement
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/ApiCredentials/AddUpdateApiCredentialForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXBpQ3JlZGVudGlhbHNcQWRkVXBkYXRlQXBpQ3JlZGVudGlhbEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/ApiCredentials/ApiCredentialList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXBpQ3JlZGVudGlhbHNcQXBpQ3JlZGVudGlhbExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Attendance/AttendanceUserById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXR0ZW5kYW5jZVxBdHRlbmRhbmNlVXNlckJ5SWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Attendance/partialLeave.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXR0ZW5kYW5jZVxwYXJ0aWFsTGVhdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Attendance/TimeSheetList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXR0ZW5kYW5jZVxUaW1lU2hlZXRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Auth/error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aFxlcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Auth/forgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aFxmb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Auth/resetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aFxyZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Holiday/AddUpdateHolidayForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9saWRheVxBZGRVcGRhdGVIb2xpZGF5Rm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Holiday/holidayList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9saWRheVxob2xpZGF5TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Leave/leaveById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGVhdmVcbGVhdmVCeUlkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Leave/LeaveUserById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGVhdmVcTGVhdmVVc2VyQnlJZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Leave/userLeaveList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGVhdmVcdXNlckxlYXZlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Project/AddUpdateProjectForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdFxBZGRVcGRhdGVQcm9qZWN0Rm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Project/ProjectList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdFxQcm9qZWN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Shared/Layout/_AuthLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXExheW91dFxfQXV0aExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Shared/Layout/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXExheW91dFxfTGF5b3V0QWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/Shared/partial/AdminMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXHBhcnRpYWxcQWRtaW5NZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/SystemSetting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3lzdGVtU2V0dGluZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/UserMemo/userMemoList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlck1lbW9cdXNlck1lbW9MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/User/AddUpdateUserForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxBZGRVcGRhdGVVc2VyRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/User/userAttendanceDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclx1c2VyQXR0ZW5kYW5jZURldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Admin/Views/User/userList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclx1c2VyTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/Attendance/getAttendanceUserBy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXEF0dGVuZGFuY2VcZ2V0QXR0ZW5kYW5jZVVzZXJCeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/Attendance/partialLeaveList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXEF0dGVuZGFuY2VccGFydGlhbExlYXZlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/Holiday/holidayList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXEhvbGlkYXlcaG9saWRheUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/Index/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXEluZGV4XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/Index/latLongWork.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXEluZGV4XGxhdExvbmdXb3JrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/Index/userProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXEluZGV4XHVzZXJQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/Leave/getUserLeave.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXExlYXZlXGdldFVzZXJMZWF2ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/Leave/leaveById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXExlYXZlXGxlYXZlQnlJZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/Shared/Layout/_LayoutPublic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXFNoYXJlZFxMYXlvdXRcX0xheW91dFB1YmxpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/Shared/partial/PublicMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXFNoYXJlZFxwYXJ0aWFsXFB1YmxpY01lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/TimeSheet/AddUpdateTimeSheetForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXFRpbWVTaGVldFxBZGRVcGRhdGVUaW1lU2hlZXRGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/TimeSheet/TimeSheetList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXFRpbWVTaGVldFxUaW1lU2hlZXRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/UserMemo/publicUserMemo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXFVzZXJNZW1vXHB1YmxpY1VzZXJNZW1vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Areas/Public/Views/UserMemo/userMemoList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHVibGljXFZpZXdzXFVzZXJNZW1vXHVzZXJNZW1vTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Views/Component/Toaster/Toaster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50XFRvYXN0ZXJcVG9hc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Project/testzipProject/hrmanagement-tagosys/Hrmanagement/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

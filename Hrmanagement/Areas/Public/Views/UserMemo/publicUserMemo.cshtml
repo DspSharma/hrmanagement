@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "~/Areas/Public/Views/Shared/Layout/_LayoutPublic.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+@{
+    var userMemo = ViewData["userMemo"] as List<UserMemoOutput>;
+}
+<style>
+    .description-column {
+        max-height: 100px; 
+        overflow-y: auto;
+    }
+</style>
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">User-Memo Public </h3>
+                </div>
+                <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>User-Name</th>
+                                <th>Url</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (userMemo != null)
+                            {
+                                var i = 0;
+                                @foreach (var userMemoList in userMemo)
+                                {
+                                    <tr>
+                                        <td>@(++i)</td>
+                                        <td>@userMemoList.userName</td>
+                                        <td>@userMemoList.Url</td>
+                                        <td>@userMemoList.Title</td>
+                                        <td class="description-column">@userMemoList.Description</td>
+                                        @*<td>@userMemoList.Description</td>*@
+
+
+                                    </tr>
+                                }
+                            }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@await Component.InvokeAsync("Toaster")

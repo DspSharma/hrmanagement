@@ -1,0 +1,253 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\css\\main.css",
+      "PackagePath": "staticwebassets\\admin\\css\\main.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\css\\site.css",
+      "PackagePath": "staticwebassets\\admin\\css\\site.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\css\\util.css",
+      "PackagePath": "staticwebassets\\admin\\css\\util.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\css\\AdminLTE.css",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\AdminLTE.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\css\\AdminLTE.min.css",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\AdminLTE.min.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\css\\adminlte.css.map",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\adminlte.css.map"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\css\\skins\\skin-blue-light.css",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\skins\\skin-blue-light.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\css\\skins\\skin-blue-light.min.css",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\skins\\skin-blue-light.min.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\css\\skins\\skin-blue.css",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\skins\\skin-blue.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\css\\skins\\skin-blue.min.css",
+      "PackagePath": "staticwebassets\\admin\\dist\\css\\skins\\skin-blue.min.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\js\\adminlte.js",
+      "PackagePath": "staticwebassets\\admin\\dist\\js\\adminlte.js"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\admin\\dist\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\js\\demo.js",
+      "PackagePath": "staticwebassets\\admin\\dist\\js\\demo.js"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\js\\pages\\dashboard.js",
+      "PackagePath": "staticwebassets\\admin\\dist\\js\\pages\\dashboard.js"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\dist\\js\\pages\\dashboard2.js",
+      "PackagePath": "staticwebassets\\admin\\dist\\js\\pages\\dashboard2.js"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\favicon.ico",
+      "PackagePath": "staticwebassets\\admin\\favicon.ico"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\fonts\\Linearicons-Free-v1.0.0\\icon-font.min.css",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Linearicons-Free-v1.0.0\\icon-font.min.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\admin\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\images\\icons\\favicon.ico",
+      "PackagePath": "staticwebassets\\admin\\images\\icons\\favicon.ico"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\images\\icons\\userimage.png",
+      "PackagePath": "staticwebassets\\admin\\images\\icons\\userimage.png"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\images\\logout.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\logout.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\images\\user1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\user1.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\js\\main.js",
+      "PackagePath": "staticwebassets\\admin\\js\\main.js"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\js\\site.js",
+      "PackagePath": "staticwebassets\\admin\\js\\site.js"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\js\\toastr.js",
+      "PackagePath": "staticwebassets\\admin\\js\\toastr.js"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\admin\\js\\validation.js",
+      "PackagePath": "staticwebassets\\admin\\js\\validation.js"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\03197419-7698-497e-a9c5-7cac5fdf1515_teacher2.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\03197419-7698-497e-a9c5-7cac5fdf1515_teacher2.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\031c6a1c-4ad8-414e-973c-608bc2dce0d4_teacher4.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\031c6a1c-4ad8-414e-973c-608bc2dce0d4_teacher4.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\0448b7d8-0a7e-4d72-9860-3d7455f23c00_teacher4.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\0448b7d8-0a7e-4d72-9860-3d7455f23c00_teacher4.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\0dc4b108-a5cc-4d3e-8bb6-51140c1fd58c_teacher4.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\0dc4b108-a5cc-4d3e-8bb6-51140c1fd58c_teacher4.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\1cff5666-7310-4ced-9186-803fd0cac1b3_Rhoit45.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\1cff5666-7310-4ced-9186-803fd0cac1b3_Rhoit45.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\1ec9d29a-a822-46e2-93e6-9bf27fbdd233_teacher1.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\1ec9d29a-a822-46e2-93e6-9bf27fbdd233_teacher1.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\28965afd-3871-4dcf-ad03-a5a95d71d0f4_teacher1.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\28965afd-3871-4dcf-ad03-a5a95d71d0f4_teacher1.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\2fa77d41-93d9-414d-9450-3472323ad6d1_Rhoit45.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\2fa77d41-93d9-414d-9450-3472323ad6d1_Rhoit45.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\2fb5b879-7275-41df-82ff-44f2d65cb928_ce172962-8b66-4474-ab78-fe5516c33d26.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\2fb5b879-7275-41df-82ff-44f2d65cb928_ce172962-8b66-4474-ab78-fe5516c33d26.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\3986de26-4d42-48f7-b71b-a8a6bd953bb9_ce172962-8b66-4474-ab78-fe5516c33d26.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\3986de26-4d42-48f7-b71b-a8a6bd953bb9_ce172962-8b66-4474-ab78-fe5516c33d26.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\4f435e2f-e6f1-488f-8546-88f9f2e2d534_Principle.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\4f435e2f-e6f1-488f-8546-88f9f2e2d534_Principle.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\51508d7c-f3db-4731-a796-2507b16fc236_Rhoit.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\51508d7c-f3db-4731-a796-2507b16fc236_Rhoit.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\557f7cb2-4db5-4f80-a287-eabed6f91640_teacher3.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\557f7cb2-4db5-4f80-a287-eabed6f91640_teacher3.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\56fc6a9f-5810-40f4-8150-a520c85a647d_Rhoit.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\56fc6a9f-5810-40f4-8150-a520c85a647d_Rhoit.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\5a045be5-9cf7-4d28-9fc9-9239ab98869d_allu.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\5a045be5-9cf7-4d28-9fc9-9239ab98869d_allu.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\64aecdb6-b2b3-41a5-87dd-f38421452e6f_allu.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\64aecdb6-b2b3-41a5-87dd-f38421452e6f_allu.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\7bfaade5-060c-4961-aad6-9ac829d9cffa_Rhoit.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\7bfaade5-060c-4961-aad6-9ac829d9cffa_Rhoit.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\850ed6b3-dd8f-4f02-946f-a54d0b40a459_11.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\850ed6b3-dd8f-4f02-946f-a54d0b40a459_11.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\89817f1a-6abe-40a9-952a-6fd0687ac271_Rhoit.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\89817f1a-6abe-40a9-952a-6fd0687ac271_Rhoit.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\9b7edc5d-5af3-4fb1-84d2-fcddc2cbd597_Rhoit.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\9b7edc5d-5af3-4fb1-84d2-fcddc2cbd597_Rhoit.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\9e5e4d01-5704-4dff-904a-c9e506f5797b_teacher3.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\9e5e4d01-5704-4dff-904a-c9e506f5797b_teacher3.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\b3711882-1f0e-44ae-835c-2c5a4d092834_badminton.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\b3711882-1f0e-44ae-835c-2c5a4d092834_badminton.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\bdfe25b3-cd5f-4aee-8f8f-3644d0fc45ac_Rhoit45.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\bdfe25b3-cd5f-4aee-8f8f-3644d0fc45ac_Rhoit45.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\c999bd82-f9e3-40a5-9c82-b8a08c3f130e_Rhoit.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\c999bd82-f9e3-40a5-9c82-b8a08c3f130e_Rhoit.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\cf5d61f5-e8af-497f-ab74-3f2a12782bae_Rhoit.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\cf5d61f5-e8af-497f-ab74-3f2a12782bae_Rhoit.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\df79bf6d-489c-46a2-b2fb-93903cdd6ba2_teacher3.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\df79bf6d-489c-46a2-b2fb-93903cdd6ba2_teacher3.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\e7d5545a-7eb0-4747-b133-e6679e3ea745_Rhoit.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\e7d5545a-7eb0-4747-b133-e6679e3ea745_Rhoit.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\e7fdfd7a-3cfd-48b0-8d27-83bbb2937713_teacher1.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\e7fdfd7a-3cfd-48b0-8d27-83bbb2937713_teacher1.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\eeeb4510-fe46-48f7-8be3-298d41fc9130_Rhoit.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\eeeb4510-fe46-48f7-8be3-298d41fc9130_Rhoit.jpg"
+    },
+    {
+      "Id": "E:\\dotnet\\hrmanagement-tagosys\\Hrmanagement\\wwwroot\\images\\Image\\fac160f4-cc81-4a06-8f54-a6828c017bea_ce172962-8b66-4474-ab78-fe5516c33d26.jpg",
+      "PackagePath": "staticwebassets\\images\\Image\\fac160f4-cc81-4a06-8f54-a6828c017bea_ce172962-8b66-4474-ab78-fe5516c33d26.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Hrmanagement.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Hrmanagement.props",
+      "PackagePath": "build\\Hrmanagement.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Hrmanagement.props",
+      "PackagePath": "buildMultiTargeting\\Hrmanagement.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Hrmanagement.props",
+      "PackagePath": "buildTransitive\\Hrmanagement.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

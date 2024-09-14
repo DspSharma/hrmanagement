@@ -1,0 +1,330 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.w-100 {
+    width:100%!important;
+}
+
+
+/*Toggle work start*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #dc3545;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+input:checked + .slider {
+    background-color: #00a65a;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+
+/*Toggle Work End*/
+
+
+
+
+/*Admin Header fix Work*/
+.adminheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 23px;
+}
+/*EventImageList Pagination Work*/
+.paginationE {
+    display: inline-block;
+}
+
+    .paginationE a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+    }
+
+        .paginationE a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .paginationE a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+.search {
+    width: 25%;
+}
+
+/*Facilities page Pagination work*/
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .pagination span {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        background-color: #f5f5f5;
+        color: #333;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+
+        .pagination span.active {
+            background-color: #337ab7;
+            color: #fff;
+            border-color: #337ab7;
+        }
+
+/*FacultyAndManagement page*/
+
+.container {
+    border-radius: 5px;
+    padding: 50px 20px;
+    margin: 30px auto;
+    width: 40%;
+    border: 2px solid #bbb;
+    text-align: center;
+}
+
+input {
+    padding: 5px;
+    background-color: #eeeeee;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 600;
+}
+
+.textbox1, .textbox2 {
+    width: 40%;
+    margin-left: 0;
+}
+
+/*FacultyAndManagementList page pagination*/
+
+.paginationFM {
+    display: inline-block;
+}
+
+    .paginationFM a {
+        color: black;
+        float: left;
+        padding: 8px 16px 10px 10px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 10px 4px 10px 0px;
+    }
+
+        .paginationFM a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .paginationFM a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+.search {
+    width: 25%;
+}
+
+/*SystemSetting Page*/
+.form-container {
+    margin-left: 20px; /* Adjust the value as needed */
+    margin-right: 20px;
+}
+
+.text1 {
+    width: 44%;
+}
+
+.text2 {
+    margin-left: 740px;
+    margin-top: -73px;
+}
+/*Scrool*/
+.divScroll {
+    overflow: scroll;
+    height: 700px;
+    width: 100%;
+}
+
+.box-body table td {
+    word-wrap: break-word;
+    max-width: 200px;
+}
+
+/** image gallerylist**/
+.div-col-4--model {
+    height: 100% !important;
+    .dimage-model
+}
+
+{
+    height: 200px !important;
+    padding: 5px !important;
+}
+
+.gallery-img-delete-btn {
+    position: absolute;
+    top: 4.5px;
+    right: 20px;
+}
+
+/*for admin image table section*/
+.Td-image {
+    width: 20%;
+}
+
+@media (max-width: 767px) {
+    .Td-image {
+        width: 100% !important;
+    }
+}
+
+
+/*loading start*/
+
+/*.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.loading {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; 
+    animation: spin 2s linear infinite;
+    z-index: 1000;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}*/
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hide-loader {
+    display: none;
+}
+/*loading End*/
+
+@media(max-width:576px) {
+    .attandanceTotalHourse {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width:100% !important;
+    }
+}

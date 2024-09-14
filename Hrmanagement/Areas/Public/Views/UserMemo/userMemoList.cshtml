@@ -1,0 +1,273 @@
+﻿@{
+    Layout = "~/Areas/Public/Views/Shared/Layout/_LayoutPublic.cshtml";
+}
+@using Hrmanagement.Core.DTO.DtoOutput;
+@{
+    var userMemo = ViewData["userMemo"] as List<UserMemoOutput>;
+}
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">User-Memo List</h3>
+                    <button class="btn btn-info pull-right" onclick="showModel('formSettingKey')"><i class="fa fa-plus"></i> User-Memo</button>
+                </div>
+                <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Url</th>
+                                <th>Title</th>
+                                <th>Status</th>
+                                <th>CreatedAt</th>
+                                <th>UpdatedAt</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (userMemo != null)
+                            {
+                                var i = 0;
+                                @foreach (var userMemoList in userMemo)
+                                {
+                                    <tr>
+                                        <td>@(++i)</td>
+                                        <td>@userMemoList.Url</td>
+                                        <td>@userMemoList.Title</td>
+                                        <td>
+                                            @if (userMemoList.AvailableForPublic == true)
+                                            {
+                                                <span>Public</span>
+                                            }
+                                            else
+                                            {
+                                                <span>Self</span>
+                                            }
+                                        </td>
+                                        
+                                       @* <td>@userMemoList.AvailableForPublic</td>*@
+                                        <td>@userMemoList.CreatedAt</td>
+                                        <td>@userMemoList.UpdatedAt</td>
+                                        <td>
+                                            <a class="btn btn-primary" href="#" onclick="editViewData(@userMemoList.id)">Edit/View</a>
+                                            <a class="btn btn-danger" href="#" onclick="confirmDelete('@userMemoList.id')">
+                                                <i class="fa fa-trash"></i> Delete
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for System Setting Work Start-->
+        <div class="modal fade" id="formSettingKeyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Add-Update User-Memo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <input type="hidden" class="form-control" id="id" name="id"/>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Url:</label>
+                                <input type="url" class="form-control" id="url" name="Url" placeholder="Url">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Title:</label>
+                                <input type="text" class="form-control" id="title" name="Title" placeholder="Title">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Description:</label>
+                                <textarea class="form-control" id="description" name="Description" placeholder="Description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">ForPublic:</label>
+                                <select id="forPublic" class="form-control">
+                                    <option value="true">Public</option>
+                                    <option value="false">Self</option>
+                                </select>
+                            </div>
+                        </form>
+                        @*Loding Work Start*@
+                        <div id="loading-spinner" class="spinner-border text-primary" role="status" style="display: none; margin-left:45%;margin-top:30px;">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        @*Loding Work End*@
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="cancelButton" class="btn btn-danger" data-dismiss="modal" onclick="cancelAndReloadPage()">Cancel</button>
+                        <button type="button" id="addUpdateButto" class="btn btn-primary" onclick="createNewKeyValue('formSettingKey', event)">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for System Setting Work End-->
+
+    </div>
+</section>
+
+
+<script>
+    // SystemSetting Work Start
+    var isLoading = false;
+    function cancelAndReloadPage() {
+        location.reload();
+    }
+    $(document).ready(function () {
+        $(".form-control").css({ "display": "inline-block", "width": "90%" });
+        $(".control-label").css({ "display": "block" });
+    });
+    function showModel(modalId) {
+        $(`#${modalId}`).val('');
+        $(`#${modalId}Modal`).modal('show');
+    }
+    function createNewKeyValue(KeyElId, event) {
+        var urlInput = document.getElementById('url');
+        var urlName = urlInput ? urlInput.value.trim() : '';
+        var titleInput = document.getElementById('title');
+        var titleName = titleInput ? titleInput.value.trim() : '';
+        var descriptionInput = document.getElementById('description');
+        var descriptionName = descriptionInput ? descriptionInput.value.trim() : '';
+        var valueKyId = document.getElementById('id').value || 0;
+        var forPublicValue = document.getElementById('forPublic').value;
+
+
+        var Addressegex = /^[a-zA-Z][a-zA-Z0-9\s.,#-]*$/;
+        var urlPattern = /^(https?:\/\/)?([\w.-]+\.[a-zA-Z]{2,})(\/[^\s]*)?$/;
+        if (urlName === '') {
+            toastr.error("Url is required");
+            return;
+        }
+        else if (!urlName.match(urlPattern))
+        {
+            toastr.error('Please enter a valid URL.');
+            return;
+        }
+        else if (titleName === '')
+        {
+            toastr.error("Title is required");
+            return;
+        }
+        else if (titleName.length < 2 || titleName.length > 50)
+        {
+            toastr.error("Title should be between minlength 2 and maxlength 50");
+            return;
+        }
+        else if (!titleName.match(Addressegex))
+        {
+            toastr.error("Title must start with alphabetic characters");
+            return;
+        }
+        else if (descriptionName === '')
+        {
+            toastr.error("Description is required");
+            return;
+        }
+        else if (descriptionName.length < 2 || descriptionName.length > 300)
+        {
+            toastr.error("Description should be between minlength 2 and maxlength 300");
+            return;
+        }
+        else if (!descriptionName.match(Addressegex))
+        {
+            toastr.error("Description must start with alphabetic characters");
+            return;
+        }
+
+
+
+       // var valueKyUserId = document.getElementById('userId').value || 0;
+        var dataToSend = {
+            "id":valueKyId,
+            //"UserId":valueKyUserId,
+            "Url": urlName,
+            "Title": titleName,
+            "Description": descriptionName,
+            "AvailableForPublic": forPublicValue
+        };
+        isLoading = true;
+        $('#cancelButton').prop('disabled', true);
+        $('#addUpdateButto').prop('disabled', true);
+        $('#closeButton').prop('disabled', true);
+        $('#loading-spinner').show();
+
+        console.log(dataToSend);
+        // $('#loadingIndicator').show();
+        $.ajax({
+            type: 'POST',
+            dataType: "json",
+            data: JSON.stringify(dataToSend),
+            url: "/../../Public/UserMemo/addUpdateUsermemo",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            success: function (response) {
+                isLoading = false;
+                $('#cancelButton').prop('disabled', false);
+                $('#addUpdateButto').prop('disabled', false);
+                $('#closeButton').prop('disabled', false);
+                $('#loading-spinner').hide();
+
+                var data = response.data;
+                toastr.success('Data Add Save Successfully');
+                setTimeout(function () {
+                    location.reload();
+                }, 2000);
+            },
+            error: function (xhr, status, error) {
+                toastr.success('Data Add Save Successfully');
+                setTimeout(function () {
+                    location.reload();
+                }, 2000);
+            }
+        });
+        $(`#${modalId}`).modal('hide');
+        document.getElementById(KeyElId).value = '';
+        valueInput.value = '';
+        $(".form-control").css({ "display": "inline-block", "width": "90%" });
+        $(".control-label").css({ "display": "block" });
+    }
+
+    function editViewData(id) {
+        $.ajax({
+            type: 'GET',
+            dataType: "json",
+            url: `/../../Public/UserMemo/getEditById/${id}`,
+            success: function (response) {
+                if (response) {
+                    console.log(response);
+                    var data = response.data;
+                    $('#id').val(data.id);
+                    //$('#userId').val(data.userId);
+                    $('#url').val(data.url);
+                    $('#title').val(data.title);
+                    $('#description').val(data.description);
+                    $('#forPublic').val(data.availableForPublic.toString());
+                    $('#formSettingKeyModal').modal('show');
+                } else {
+                    console.error('Error fetching data.');
+                }
+            },
+        });
+    }
+    function confirmDelete(itemId) {
+        if (confirm("Are you sure you want to delete this item?")) {
+            window.location.href = '/../../Public/UserMemo/deleteByIdUserMemo/' + itemId;
+        } else {
+
+        }
+    }
+
+   
+
+    //<td>userMemoList.AvailableForPublic</td>
+</script>
+@await Component.InvokeAsync("Toaster")
